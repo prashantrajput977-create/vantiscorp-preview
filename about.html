@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -31,7 +31,45 @@
   <div class="container">
     <a class="brand" href="index.html" aria-label="VantisCorp"><img src="images/vantis-logo.png" alt="VantisCorp" /></a>
     <nav class="nav">
-      <a href="platform.html">Featues</a>
+      <div class="nav-has-drop"><a href="platform.html">Featues</a>
+        <div class="nav-drop" role="menu">
+          <div class="nav-drop-label">AI Agents</div>
+          <div class="nav-drop-grid">
+            <a href="booking-agent.html" role="menuitem">
+              <span class="nav-drop-ico book"><i class="fa-solid fa-plane-up"></i></span>
+              <span class="nav-drop-text">
+                <span class="nav-drop-title">Booking Agent</span>
+                <span class="nav-drop-desc">AI-ranked search across every fare source</span>
+              </span>
+            </a>
+            <a href="compliance-agent.html" role="menuitem">
+              <span class="nav-drop-ico comp"><i class="fa-solid fa-shield-halved"></i></span>
+              <span class="nav-drop-text">
+                <span class="nav-drop-title">Compliance Agent</span>
+                <span class="nav-drop-desc">Real-time policy and approvals</span>
+              </span>
+            </a>
+            <a href="finance-agent.html" role="menuitem">
+              <span class="nav-drop-ico fin"><i class="fa-solid fa-chart-line"></i></span>
+              <span class="nav-drop-text">
+                <span class="nav-drop-title">Finance Agent</span>
+                <span class="nav-drop-desc">Auto-reconciliation and close</span>
+              </span>
+            </a>
+            <a href="servicing-agent.html" role="menuitem">
+              <span class="nav-drop-ico serv"><i class="fa-solid fa-money-bill-transfer"></i></span>
+              <span class="nav-drop-text">
+                <span class="nav-drop-title">Servicing Agent</span>
+                <span class="nav-drop-desc">Autonomous changes and rebookings</span>
+              </span>
+            </a>
+          </div>
+          <div class="nav-drop-foot">
+            <a href="platform.html">See the full platform <span aria-hidden="true">›</span></a>
+            <span class="muted-note">Four agents. One operating system.</span>
+          </div>
+        </div>
+      </div>
       <a href="integrations.html">Integration</a>
       
       <a href="about.html" class="active">Company</a>

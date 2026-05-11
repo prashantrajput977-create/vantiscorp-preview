@@ -158,6 +158,142 @@ p { color: var(--text-2); margin: 14px 0 0; }
 .menu-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; color: var(--ink); }
 .menu-toggle svg { width: 24px; height: 24px; stroke: currentColor; stroke-width: 2; fill: none; }
 
+/* ---------- Features dropdown (mega-menu) ---------- */
+.nav-has-drop { position: relative; }
+.nav-has-drop > a {
+  display: inline-flex; align-items: center; gap: 5px;
+}
+.nav-has-drop > a::before {
+  content: "";
+  display: inline-block;
+  width: 8px; height: 8px;
+  margin-left: 2px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  opacity: 0.55;
+  transition: transform var(--d-fast) var(--ease-out);
+  order: 2;
+}
+.nav-has-drop:hover > a::before {
+  transform: rotate(225deg) translateY(-2px);
+}
+.nav-drop {
+  position: absolute;
+  top: calc(100% + 18px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  width: 720px;
+  background: #fff;
+  border: 1px solid var(--hairline);
+  border-radius: 18px;
+  box-shadow: var(--shadow-3);
+  padding: 22px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity var(--d-base) var(--ease-out), transform var(--d-base) var(--ease-out), visibility 0s linear var(--d-base);
+  z-index: 80;
+}
+.nav-has-drop:hover .nav-drop,
+.nav-has-drop:focus-within .nav-drop {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition: opacity var(--d-base) var(--ease-out), transform var(--d-base) var(--ease-out), visibility 0s;
+}
+/* invisible hover bridge so dropdown doesn't close in the gap */
+.nav-has-drop::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 100%;
+  height: 22px;
+}
+.nav-drop-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0 10px 10px;
+  border-bottom: 1px solid var(--hairline-2);
+  margin-bottom: 10px;
+}
+.nav-drop-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+.nav-drop a {
+  display: flex !important;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  opacity: 1 !important;
+  transition: background var(--d-fast) var(--ease-out);
+}
+.nav-drop a::after { display: none !important; }
+.nav-drop a:hover { background: var(--surface-3); }
+.nav-drop-ico {
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.nav-drop-ico.book { background: rgba(0,107,91,0.08); color: var(--dark-green); }
+.nav-drop-ico.comp { background: rgba(20,207,147,0.10); color: #0d9b6f; }
+.nav-drop-ico.fin  { background: rgba(95,123,160,0.10); color: #4a6b8c; }
+.nav-drop-ico.serv { background: rgba(217,130,46,0.10); color: #b66a17; }
+.nav-drop-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1.3;
+}
+.nav-drop-title {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.nav-drop-desc {
+  font-size: 12.5px;
+  color: var(--muted);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.nav-drop-foot {
+  margin-top: 14px;
+  padding: 12px 12px 4px;
+  border-top: 1px solid var(--hairline-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-drop-foot a {
+  display: inline-flex !important;
+  padding: 0 !important;
+  gap: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--dark-green) !important;
+  border-radius: 0;
+}
+.nav-drop-foot a:hover { background: transparent; color: var(--bright-green) !important; }
+.nav-drop-foot .muted-note { font-size: 12.5px; color: var(--muted); }
+@media (max-width: 900px) {
+  .nav-drop { display: none; }
+  .nav-has-drop > a::before { display: none; }
+}
+
 /* ---------- Notibar ---------- */
 .notibar {
   background: linear-gradient(90deg, #0b1418 0%, #0f2421 50%, #0b1418 100%);

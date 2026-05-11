@@ -16,7 +16,11 @@
 <!-- NOTIBAR -->
 <div class="notibar" role="region" aria-label="Announcement">
   <div class="container">
-    <span class="notibar-text"><span class="notibar-tag">New</span> Servicing Agent is now live. Autonomous changes, cancellations, and rebookings. <a href="servicing-agent.html">Read more <span aria-hidden="true">›</span></a></span>
+    <span class="notibar-text">
+      <span class="notibar-tag">New</span>
+      <span class="notibar-headline">Servicing Agent is live. Autonomous changes, cancellations, and rebookings.</span>
+      <a class="notibar-cta" href="servicing-agent.html">See what it does <span class="notibar-arrow" aria-hidden="true">›</span></a>
+    </span>
     <button class="notibar-close" aria-label="Dismiss announcement">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 6l12 12M6 18L18 6" stroke-linecap="round"/></svg>
     </button>
@@ -25,11 +29,11 @@
 
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="index.html"><svg viewBox="0 0 40 40" fill="none" aria-label="VantisCorp"><path d="M5 7 L20 35 L35 7 L27.5 7 L20 22 L12.5 7 Z" fill="#0b1418"/><path d="M17.5 7 L20 12 L22.5 7 Z" fill="#14cf93"/></svg>VantisCorp</a>
+    <a class="brand" href="index.html" aria-label="VantisCorp"><img src="images/vantis-logo.png" alt="VantisCorp" /></a>
     <nav class="nav">
       <a href="platform.html" class="active">Featues</a>
       <a href="integrations.html">Integration</a>
-      <a href="#">Resources</a>
+      
       <a href="about.html">Company</a>
       <a href="#">Contact Us</a>
       <a class="nav-search" href="#" aria-label="Search"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5" stroke-linecap="round"/></svg></a>
@@ -67,17 +71,6 @@
     </div>
   </div>
 </section>
-
-<!-- FEATURED IMAGE -->
-<section class="featured-section" style="padding-top:0;">
-  <div class="container">
-    <div class="featured-image fade-in">
-      <img src="images/stock/hero-compliance.jpg" alt="Hand signing a contract" loading="lazy" />
-    </div>
-  </div>
-</section>
-
-
 
 <!-- FEATURES -->
 <section>
@@ -138,28 +131,53 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="index.html"><svg viewBox="0 0 40 40" fill="none" aria-label="VantisCorp" style="width:26px;height:26px"><path d="M5 7 L20 35 L35 7 L27.5 7 L20 22 L12.5 7 Z" fill="#0b1418"/><path d="M17.5 7 L20 12 L22.5 7 Z" fill="#14cf93"/></svg>VantisCorp</a>
-        <p style="margin-top:14px; max-width:300px; font-size:14px;">The AI operating system purpose-built for TMCs.</p>
+        <a class="brand" href="index.html" aria-label="VantisCorp"><img src="images/vantis-logo-white.png" alt="VantisCorp" /></a>
+        <p class="foot-tagline">The AI operating system purpose-built for travel management companies.</p>
+        <div class="socials" style="margin-top:24px;">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
       </div>
-      <div><h5>Features</h5><ul>
-        <li><a href="booking-agent.html">Booking Agent</a></li>
-        <li><a href="compliance-agent.html">Compliance Agent</a></li>
-        <li><a href="finance-agent.html">Finance Agent</a></li>
-        <li><a href="servicing-agent.html">Servicing Agent</a></li>
-        <li><a href="integrations.html">Integrations</a></li>
-      </ul></div>
-      <div><h5>Company</h5><ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul></div>
+      <div>
+        <h5>Platform</h5>
+        <ul>
+          <li><a href="platform.html">Overview</a></li>
+          <li><a href="booking-agent.html">Booking Agent</a></li>
+          <li><a href="compliance-agent.html">Compliance Agent</a></li>
+          <li><a href="finance-agent.html">Finance Agent</a></li>
+          <li><a href="servicing-agent.html">Servicing Agent</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="integrations.html">Integrations</a></li>
+          <li><a href="platform.html">For TMCs</a></li>
+          <li><a href="platform.html">For Enterprise</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Book a demo</a></li>
+        </ul>
+      </div>
     </div>
     <div class="foot-bottom">
-      <span>Copyright © 2026 VantisCorp</span>
-      <div class="socials"><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></div>
+      <span>© 2026 VantisCorp. All rights reserved.</span>
+      <div class="foot-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Security</a>
+      </div>
     </div>
   </div>
 </footer>

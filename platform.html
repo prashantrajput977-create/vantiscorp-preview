@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Platform. VantisCorp.</title>
-<meta name="description" content="The VantisCorp platform: an AI operating system for TMCs. Four autonomous agents (Booking, Compliance, Finance, Servicing) running on shared infrastructure." />
+<title>Agents. VantisCorp.</title>
+<meta name="description" content="Meet the four VantisCorp agents. Booking, Compliance, Servicing, and Finance agents purpose-built for TMCs, running on one shared platform." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
   <div class="container">
     <a class="brand" href="index.html" aria-label="VantisCorp"><img src="images/vantis-logo.png" alt="VantisCorp" /></a>
     <nav class="nav">
-      <div class="nav-has-drop"><a href="platform.html" class="active">Featues</a>
+      <div class="nav-has-drop"><a href="platform.html" class="active">Agents</a>
         <div class="nav-drop" role="menu">
           <div class="nav-drop-label">AI Agents</div>
           <div class="nav-drop-grid">
@@ -83,88 +83,234 @@
 <section class="split-hero">
   <div class="container">
     <div class="content">
-      <span class="eyebrow">Platform</span>
-      <h1 class="mt-6">One operating system. Four autonomous agents.</h1>
-      <p>VantisCorp is purpose-built for travel management companies. Four agents (Booking, Compliance, Finance, and Servicing) share one policy engine, one audit log, and one integration layer. Together they take the routine work off your team's queue.</p>
+      <span class="eyebrow">Agents</span>
+      <h1 class="mt-6">Meet your AI workforce. Four agents, one platform.</h1>
+      <p>Each agent owns a critical TMC workflow end to end. They share one policy engine, one audit log, and one integration layer, so work flows cleanly from request to settlement without a single ticket bouncing between teams.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#">Book a demo</a>
-        <a class="btn btn-ghost" href="#">Watch platform tour <span aria-hidden="true">›</span></a>
+        <a class="btn btn-ghost" href="#agents">See all four agents <span aria-hidden="true">›</span></a>
       </div>
     </div>
     <div class="split-hero-image">
       <img src="images/stock/hero-platform.jpg" alt="Aircraft wing in flight" loading="eager" />
-      <span class="split-hero-badge">Live in 11+ countries</span>
+      <span class="split-hero-badge">Built for TMCs, day one</span>
     </div>
   </div>
 </section>
 
-<!-- AGENT GRID -->
+<!-- COMPARE STRIP -->
+<section style="padding-top:24px;">
+  <div class="container">
+    <span class="eyebrow">At a glance</span>
+    <h2 class="mt-6">Each agent owns a different part of the journey.</h2>
+    <div class="compare-strip mt-12">
+      <div class="compare-row head">
+        <div>Agent</div>
+        <div>What it owns</div>
+        <div>Triggered by</div>
+        <div>Hands off to</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-agent"><span class="mini-ico book"><i class="fa-solid fa-plane-up"></i></span>Booking</div>
+        <div class="col">Multi-source search, ranking, ticketing</div>
+        <div class="col">Traveler request, OBT, WhatsApp, email</div>
+        <div class="col">Compliance, then Finance</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-agent"><span class="mini-ico comp"><i class="fa-solid fa-shield-halved"></i></span>Compliance</div>
+        <div class="col">Policy enforcement, approvals, audit trail</div>
+        <div class="col">Every Booking and Servicing action</div>
+        <div class="col">Approvers, then back to the agent</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-agent"><span class="mini-ico serv"><i class="fa-solid fa-money-bill-transfer"></i></span>Servicing</div>
+        <div class="col">Changes, cancellations, refunds, rebookings</div>
+        <div class="col">Traveler messages, schedule changes, disruptions</div>
+        <div class="col">Compliance and Finance</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-agent"><span class="mini-ico fin"><i class="fa-solid fa-chart-line"></i></span>Finance</div>
+        <div class="col">Reconciliation, tax, close, invoicing</div>
+        <div class="col">Every booked, changed, or refunded PNR</div>
+        <div class="col">Your ERP and your finance team</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEEP AGENT CARDS -->
+<section id="agents" style="background:#fff; border-top:1px solid var(--hairline); border-bottom:1px solid var(--hairline);">
+  <div class="container">
+    <span class="eyebrow">The four agents</span>
+    <h2 class="mt-6">Built on shared infrastructure. Specialized in their craft.</h2>
+
+    <div class="mt-12">
+
+      <!-- Booking -->
+      <div class="agent-deep">
+        <div><div class="agent-deep-ico book"><i class="fa-solid fa-plane-up"></i></div></div>
+        <div class="agent-deep-body">
+          <div class="agent-deep-name">Booking Agent</div>
+          <h3 class="agent-deep-title">Shop, rank, and book across every fare source.</h3>
+          <p class="agent-deep-lead">One unified search across GDS, NDC, and direct connect. The agent applies your negotiated rates, runs policy filters, ranks options in under five seconds, and books the right fare without a human in the loop on simple trips.</p>
+          <div class="agent-deep-caps">
+            <div class="cap-pill">
+              <span class="cap-pill-title">Multi-source shop</span>
+              <span class="cap-pill-desc">Amadeus, Sabre, Travelport, NDC, low-cost carriers, hotels</span>
+            </div>
+            <div class="cap-pill">
+              <span class="cap-pill-title">Negotiated rates applied</span>
+              <span class="cap-pill-desc">Corporate fares, hotel deals, and supplier waivers attached automatically</span>
+            </div>
+            <div class="cap-pill">
+              <span class="cap-pill-title">AI-ranked results</span>
+              <span class="cap-pill-desc">Best match by policy, price, and traveler preference, with a clear reason</span>
+            </div>
+          </div>
+          <div class="agent-deep-foot">
+            <div class="agent-deep-stat"><strong>&lt; 5s</strong><span>typical search</span></div>
+            <div class="agent-deep-stat"><strong>60%</strong><span>faster turnaround</span></div>
+            <a class="agent-deep-link" href="booking-agent.html">Explore Booking Agent <span aria-hidden="true">›</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compliance -->
+      <div class="agent-deep">
+        <div><div class="agent-deep-ico comp"><i class="fa-solid fa-shield-halved"></i></div></div>
+        <div class="agent-deep-body">
+          <div class="agent-deep-name">Compliance Agent</div>
+          <h3 class="agent-deep-title">Policy enforced in real time. Every decision traceable.</h3>
+          <p class="agent-deep-lead">Compliance Agent watches every booking and servicing action against your live policy. It blocks the wrong calls, routes approvals with full context to the right person, and writes an immutable audit log your finance and legal teams can export in one click.</p>
+          <div class="agent-deep-caps">
+            <div class="cap-pill">
+              <span class="cap-pill-title">Live policy engine</span>
+              <span class="cap-pill-desc">Traveler, project, and cost-center scoped rules with versioning</span>
+            </div>
+            <div class="cap-pill">
+              <span class="cap-pill-title">Smart approvals</span>
+              <span class="cap-pill-desc">Right approver, right channel (Slack, WhatsApp, email), full context attached</span>
+            </div>
+            <div class="cap-pill">
+              <span class="cap-pill-title">Audit by default</span>
+              <span class="cap-pill-desc">Reason codes on every action. SOC 2 ready, exportable to Snowflake or S3</span>
+            </div>
+          </div>
+          <div class="agent-deep-foot">
+            <div class="agent-deep-stat"><strong>98%</strong><span>policy compliance</span></div>
+            <div class="agent-deep-stat"><strong>4x</strong><span>faster approvals</span></div>
+            <a class="agent-deep-link" href="compliance-agent.html">Explore Compliance Agent <span aria-hidden="true">›</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicing -->
+      <div class="agent-deep">
+        <div><div class="agent-deep-ico serv"><i class="fa-solid fa-money-bill-transfer"></i></div></div>
+        <div class="agent-deep-body">
+          <div class="agent-deep-name">Servicing Agent</div>
+          <h3 class="agent-deep-title">Autonomous changes, cancellations, and rebookings.</h3>
+          <p class="agent-deep-lead">Servicing Agent handles the traveler over WhatsApp, email, or chat. It rebooks delayed flights, processes refunds inside fare rules, and only escalates the complex cases. Your consultants get back the hours they used to spend on routine queue work.</p>
+          <div class="agent-deep-caps">
+            <div class="cap-pill">
+              <span class="cap-pill-title">Conversational interface</span>
+              <span class="cap-pill-desc">WhatsApp Business, email, web chat. Travelers stay in their preferred channel</span>
+            </div>
+            <div class="cap-pill">
+              <span class="cap-pill-title">Disruption-aware</span>
+              <span class="cap-pill-desc">Schedule changes and cancellations re-routed automatically inside fare rules</span>
+            </div>
+            <div class="cap-pill">
+              <span class="cap-pill-title">Clean escalation</span>
+              <span class="cap-pill-desc">Complex cases handed to your consultants with the full conversation attached</span>
+            </div>
+          </div>
+          <div class="agent-deep-foot">
+            <div class="agent-deep-stat"><strong>75%</strong><span>auto-resolved</span></div>
+            <div class="agent-deep-stat"><strong>1.2m</strong><span>avg handle time</span></div>
+            <a class="agent-deep-link" href="servicing-agent.html">Explore Servicing Agent <span aria-hidden="true">›</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Finance -->
+      <div class="agent-deep">
+        <div><div class="agent-deep-ico fin"><i class="fa-solid fa-chart-line"></i></div></div>
+        <div class="agent-deep-body">
+          <div class="agent-deep-name">Finance Agent</div>
+          <h3 class="agent-deep-title">From PNR to posted journal. Books closed in hours.</h3>
+          <p class="agent-deep-lead">Finance Agent matches airline, hotel, and vendor invoices to PNRs, handles GST, VAT, and sales tax, and posts clean journals straight into NetSuite, QuickBooks, Xero, SAP, or Tally. It also flags anomalies and overbilling before they hit your P&amp;L.</p>
+          <div class="agent-deep-caps">
+            <div class="cap-pill">
+              <span class="cap-pill-title">Three-way match</span>
+              <span class="cap-pill-desc">PNR, invoice, and payment reconciled automatically with exception flags</span>
+            </div>
+            <div class="cap-pill">
+              <span class="cap-pill-title">Tax and compliance</span>
+              <span class="cap-pill-desc">GST, VAT, and sales-tax handling per market, audit-ready</span>
+            </div>
+            <div class="cap-pill">
+              <span class="cap-pill-title">ERP-native posting</span>
+              <span class="cap-pill-desc">Journals land directly in your finance system. No CSV imports, no copy-paste</span>
+            </div>
+          </div>
+          <div class="agent-deep-foot">
+            <div class="agent-deep-stat"><strong>3x</strong><span>faster close</span></div>
+            <div class="agent-deep-stat"><strong>$63K</strong><span>avg saved per quarter</span></div>
+            <a class="agent-deep-link" href="finance-agent.html">Explore Finance Agent <span aria-hidden="true">›</span></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FLOW: how agents work together -->
 <section>
   <div class="container">
-    <span class="eyebrow">Your AI workforce</span>
-    <h2 class="mt-6">Four agents. Every workflow. Always on.</h2>
-    <p class="lead mt-6">Each agent owns a critical TMC workflow end to end. They share state, hand off cleanly, and stay inside your business rules.</p>
+    <span class="eyebrow">How they work together</span>
+    <h2 class="mt-6">One trip. One thread. Four agents.</h2>
+    <p class="lead mt-6">A single business trip touches every agent. They share state, hand off cleanly, and never make the traveler or your consultant repeat themselves.</p>
 
-    <div class="grid grid-2 mt-12">
-
-      <a class="card" href="booking-agent.html" style="text-decoration:none;">
-        <span class="eyebrow">Booking Agent</span>
-        <h3 class="mt-6">AI-ranked search across every fare source.</h3>
-        <p>Shop GDS, NDC, and direct connect in parallel. Negotiated rates applied, policy filters enforced, ranked results in under five seconds. No more switching between Sabre Red and three NDC portals.</p>
-        <div class="mock mt-8">
-          <div class="mock-row"><span>JFK to LAX, Mar 15</span><span class="badge grey">Search</span></div>
-          <div class="mock-row"><span>UA 2847, best match</span><span class="badge green">Auto-selected</span></div>
-          <div class="mock-row"><span>DL 1153, in policy</span><span class="badge grey">Alt</span></div>
-        </div>
-        <div class="mt-6"><strong style="color:var(--dark-green);">Learn more <span aria-hidden="true">›</span></strong></div>
-      </a>
-
-      <a class="card" href="compliance-agent.html" style="text-decoration:none;">
-        <span class="eyebrow">Compliance Agent</span>
-        <h3 class="mt-6">Real-time policy and approvals.</h3>
-        <p>Catches out-of-policy bookings before they ticket. Routes approvals to the right person with full context. Every decision is logged. Audit ready, exportable, immutable.</p>
-        <div class="mock mt-8">
-          <div class="mock-row"><span>VIP override, J. Park</span><span class="badge green">Approved</span></div>
-          <div class="mock-row"><span>Rate cap exceeded</span><span class="badge amber">Routed</span></div>
-          <div class="mock-row"><span>Hotel policy exception</span><span class="badge red">Auto-denied</span></div>
-        </div>
-        <div class="mt-6"><strong style="color:var(--dark-green);">Learn more <span aria-hidden="true">›</span></strong></div>
-      </a>
-
-      <a class="card" href="finance-agent.html" style="text-decoration:none;">
-        <span class="eyebrow">Finance Agent</span>
-        <h3 class="mt-6">Auto-reconciliation and close.</h3>
-        <p>Match airline, hotel, and vendor invoices to PNRs automatically. Handle GST, VAT, and sales tax. Post journals to NetSuite, QuickBooks, Xero, SAP, or Tally, and close the month in hours.</p>
-        <div class="mock mt-8">
-          <div class="mock-row"><span>3 invoices auto-matched</span><span class="badge green">$12,400 cleared</span></div>
-          <div class="mock-row"><span>GST return, Q4</span><span class="badge green">Filed</span></div>
-          <div class="mock-row"><span>Vendor anomaly, RTC Air</span><span class="badge amber">Review</span></div>
-        </div>
-        <div class="mt-6"><strong style="color:var(--dark-green);">Learn more <span aria-hidden="true">›</span></strong></div>
-      </a>
-
-      <a class="card" href="servicing-agent.html" style="text-decoration:none;">
-        <span class="eyebrow">Servicing Agent</span>
-        <h3 class="mt-6">Autonomous changes and rebookings.</h3>
-        <p>Resolves traveler change requests, cancellations, and refunds over WhatsApp, email, and chat. Escalates only the complex cases. Your consultants stay focused on the human moments that matter.</p>
-        <div class="mock mt-8">
-          <div class="mock-row"><span>M. Chen, flight delayed 4h</span><span class="badge green">Auto-resolved</span></div>
-          <div class="mock-row"><span>R. Patel, early check-in</span><span class="badge amber">Processing</span></div>
-          <div class="mock-row"><span>L. Torres, SFO cancel</span><span class="badge grey">Pending</span></div>
-        </div>
-        <div class="mt-6"><strong style="color:var(--dark-green);">Learn more <span aria-hidden="true">›</span></strong></div>
-      </a>
-
+    <div class="flow-chain mt-12">
+      <div class="flow-node">
+        <span class="flow-node-step">Step 1</span>
+        <div class="flow-node-ico book"><i class="fa-solid fa-plane-up"></i></div>
+        <div class="flow-node-name">Booking</div>
+        <div class="flow-node-note">Traveler asks for JFK to LAX. Agent shops 12 sources, ranks 3 best options.</div>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">›</div>
+      <div class="flow-node">
+        <span class="flow-node-step">Step 2</span>
+        <div class="flow-node-ico comp"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="flow-node-name">Compliance</div>
+        <div class="flow-node-note">Top pick is over policy cap. Routed to the cost-center owner, auto-approved in 14 min.</div>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">›</div>
+      <div class="flow-node">
+        <span class="flow-node-step">Step 3</span>
+        <div class="flow-node-ico serv"><i class="fa-solid fa-money-bill-transfer"></i></div>
+        <div class="flow-node-name">Servicing</div>
+        <div class="flow-node-note">Flight delayed 4 hours. Agent rebooks to the next nonstop over WhatsApp, no human needed.</div>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">›</div>
+      <div class="flow-node">
+        <span class="flow-node-step">Step 4</span>
+        <div class="flow-node-ico fin"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="flow-node-name">Finance</div>
+        <div class="flow-node-note">Original ticket and exchange fare reconciled. GST posted. Journal lands in NetSuite.</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS (alternating two-col) -->
+<!-- SHARED FOUNDATION (kept) -->
 <section style="background:#fff; border-top:1px solid var(--hairline); border-bottom:1px solid var(--hairline);">
   <div class="container">
-    <span class="eyebrow">Under the hood</span>
+    <span class="eyebrow">Shared foundation</span>
     <h2 class="mt-6">One system, not four point tools.</h2>
-    <p class="lead mt-6">Every agent runs on shared infrastructure. That is why work flows cleanly from search to settlement, and every action is traceable from end to end.</p>
+    <p class="lead mt-6">Every agent runs on the same three pillars. That is what makes the hand-offs invisible and the audit trail unbroken.</p>
 
     <div class="two-col mt-16">
       <div>
@@ -215,7 +361,7 @@
         <h3>Integration Layer</h3>
         <p>Pre-built connectors to GDSs, OBTs, mid-office, ERPs, and communication tools. New systems take days to wire up, not quarters. No rip and replace, no long systems-integrator projects.</p>
         <ul style="margin-top:18px; padding-left:18px; color:var(--text-2); font-size:14.5px; line-height:1.8;">
-          <li>60+ native integrations on day one</li>
+          <li>22+ native integrations on day one</li>
           <li>REST and webhook APIs for the rest</li>
           <li>4-week typical time to live</li>
         </ul>
@@ -232,29 +378,15 @@
   </div>
 </section>
 
-<!-- RESULTS -->
-<section>
-  <div class="container">
-    <span class="eyebrow">Real outcomes</span>
-    <h2 class="mt-6">Results TMCs actually measure.</h2>
-    <div class="grid grid-4 mt-12">
-      <div class="card center"><div class="stat-num" style="color:var(--bright-green);">60%</div><div class="stat-label">Faster booking turnaround</div></div>
-      <div class="card center"><div class="stat-num" style="color:var(--bright-green);">98%</div><div class="stat-label">Policy compliance rate</div></div>
-      <div class="card center"><div class="stat-num" style="color:var(--bright-green);">3x</div><div class="stat-label">Faster reconciliation</div></div>
-      <div class="card center"><div class="stat-num" style="color:var(--bright-green);">40%</div><div class="stat-label">More bookings, same team</div></div>
-    </div>
-  </div>
-</section>
-
 <!-- CTA -->
 <section>
   <div class="container">
     <div class="cta-banner">
-      <h2>Ready to run your TMC on autopilot?</h2>
-      <p>See VantisCorp work against your real fares, your real policies, your real ledger. Under 30 minutes.</p>
+      <h2>See all four agents work on your real data.</h2>
+      <p>Bring your fares, your policy, and a sample invoice run. We will walk you through every hand-off in under 30 minutes.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="#">Schedule your demo</a>
-        <a class="btn btn-ghost" href="#">Talk to our team <span aria-hidden="true">›</span></a>
+        <a class="btn btn-primary" href="#">Book a working demo</a>
+        <a class="btn btn-ghost" href="integrations.html">See integrations <span aria-hidden="true">›</span></a>
       </div>
       <div class="fine">No commitment. Personalized walkthrough.</div>
     </div>

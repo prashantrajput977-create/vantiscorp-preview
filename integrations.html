@@ -3,18 +3,24 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Integrations — VantisCorp</title>
+<title>Integrations. VantisCorp.</title>
 <meta name="description" content="VantisCorp plugs into the GDSs, mid-office systems, OBTs, finance tools, and communication channels your TMC already runs on." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link rel="stylesheet" href="css/styles.css">
+<style>
+  /* Letter mark template used inside .ic-logo */
+  .lmark { width: 100%; height: 100%; display: block; border-radius: 9px; }
+  .lmark rect { rx: 9; }
+</style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="index.html"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 6 L16 28 L28 6 L22 6 L16 18 L10 6 Z" fill="#0a0a0a"/><path d="M14 6 L16 10 L18 6 Z" fill="#14cf93"/></svg>VantisCorp</a>
+    <a class="brand" href="index.html"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 6 L16 28 L28 6 L22 6 L16 18 L10 6 Z" fill="#0b1418"/><path d="M14 6 L16 10 L18 6 Z" fill="#14cf93"/></svg>VantisCorp</a>
     <nav class="nav">
       <a href="platform.html">Featues</a>
       <a href="integrations.html" class="active">Integration</a>
@@ -32,16 +38,16 @@
   <div class="container">
     <span class="eyebrow">Integrations</span>
     <h1 class="mt-6">Plug into the stack you already run.</h1>
-    <p>VantisCorp connects to your GDSs, mid-office systems, OBTs, finance platforms, and communication channels out of the box. No rip-and-replace. No long systems-integrator project. Agents start working with the data and rules you already have.</p>
+    <p>VantisCorp connects to your GDSs, mid-office systems, OBTs, finance platforms, and communication channels out of the box. No rip and replace. No long systems-integrator project. Agents start working with the data and rules you already have.</p>
     <div class="actions">
-      <a class="btn btn-primary" href="#">Book a Demo</a>
-      <a class="btn btn-ghost" href="#">Request an integration ›</a>
+      <a class="btn btn-primary" href="#">Book a demo</a>
+      <a class="btn btn-ghost" href="#">Request an integration <span aria-hidden="true">›</span></a>
     </div>
 
     <div class="stat-row">
-      <div><div class="stat-num">60+</div><div class="stat-label">Native Integrations</div></div>
-      <div><div class="stat-num">4</div><div class="stat-label">Weeks to Go Live</div></div>
-      <div><div class="stat-num">100%</div><div class="stat-label">API-First</div></div>
+      <div><div class="stat-num">60+</div><div class="stat-label">Native integrations</div></div>
+      <div><div class="stat-num">4</div><div class="stat-label">Weeks to go live</div></div>
+      <div><div class="stat-num">100%</div><div class="stat-label">API-first</div></div>
     </div>
   </div>
 </section>
@@ -50,76 +56,258 @@
 <section>
   <div class="container">
 
-    <div class="cat-title">Global Distribution Systems</div>
+    <div class="cat-title">Global distribution systems</div>
     <div class="int-grid">
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/amadeus/006b5b" alt="Amadeus"></div><h4>Amadeus</h4></div><p>Live shopping, booking, and queue management across Altéa and Amadeus Selling Platform.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/sabre/006b5b" alt="Sabre"></div><h4>Sabre</h4></div><p>Bi-directional sync with Sabre Red 360, Sabre APIs, and Trip Case data.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/galileo/006b5b" alt="Travelport"></div><h4>Travelport</h4></div><p>Galileo, Worldspan, and Apollo support through Travelport+ APIs.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo">N</div><h4>NDC Aggregators</h4></div><p>Connect Duffel, Verteil, Kyte, and direct airline NDC pipes — agents shop across all of them in parallel.</p><span class="tag">Native</span></div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#0050a0"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff" letter-spacing="-0.03em">A</text></svg></div>
+          <h4>Amadeus</h4>
+        </div>
+        <p>Live shopping, booking, and queue management across Altéa and Amadeus Selling Platform.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#0033a0"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">S</text></svg></div>
+          <h4>Sabre</h4>
+        </div>
+        <p>Two-way sync with Sabre Red 360, Sabre APIs, and TripCase data.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#1b1b1b"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="10" fill="#14cf93">TP</text></svg></div>
+          <h4>Travelport</h4>
+        </div>
+        <p>Galileo, Worldspan, and Apollo support through Travelport+ APIs.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#006b5b"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="10" fill="#fff">NDC</text></svg></div>
+          <h4>NDC aggregators</h4>
+        </div>
+        <p>Connect Duffel, Verteil, Kyte, and direct airline NDC pipes. Agents shop across all of them in parallel.</p>
+        <span class="tag">Native</span>
+      </div>
     </div>
 
-    <div class="cat-title">Online Booking Tools</div>
+    <div class="cat-title">Online booking tools</div>
     <div class="int-grid">
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/sap/006b5b" alt="SAP Concur"></div><h4>SAP Concur</h4></div><p>Pass policy, profile, and trip data both ways. Agents service Concur bookings automatically.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo">E</div><h4>Egencia</h4></div><p>Servicing-layer integration for change, cancel, and refund workflows.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo">G</div><h4>GetThere</h4></div><p>Mid-office sync for GetThere bookings — including policy logs and approvals.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo">D</div><h4>Deem</h4></div><p>Inbound and outbound API support for Etta-powered bookings.</p><span class="tag">Native</span></div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#0070b0"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">C</text></svg></div>
+          <h4>SAP Concur</h4>
+        </div>
+        <p>Pass policy, profile, and trip data both ways. Agents service Concur bookings automatically.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#003a70"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">E</text></svg></div>
+          <h4>Egencia</h4>
+        </div>
+        <p>Servicing-layer integration for change, cancel, and refund workflows.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#1f4f3a"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="10" fill="#fff">GT</text></svg></div>
+          <h4>GetThere</h4>
+        </div>
+        <p>Mid-office sync for GetThere bookings, including policy logs and approvals.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#e94e1b"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">D</text></svg></div>
+          <h4>Deem</h4>
+        </div>
+        <p>Inbound and outbound API support for Etta-powered bookings.</p>
+        <span class="tag">Native</span>
+      </div>
     </div>
 
-    <div class="cat-title">Finance, ERP &amp; Accounting</div>
+    <div class="cat-title">Finance, ERP, and accounting</div>
     <div class="int-grid">
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/oracle/006b5b" alt="NetSuite"></div><h4>NetSuite</h4></div><p>Push reconciled invoices, journals, and revenue entries straight into NetSuite.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/quickbooks/006b5b" alt="QuickBooks"></div><h4>QuickBooks</h4></div><p>Two-way sync for invoice posting, payment match, and tax handling.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/xero/006b5b" alt="Xero"></div><h4>Xero</h4></div><p>Automated bank feed reconciliation for global TMC operations.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/sap/006b5b" alt="SAP"></div><h4>SAP</h4></div><p>Enterprise-grade integration via SAP BTP for large multi-entity TMCs.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/tally/006b5b" alt="Tally"></div><h4>Tally</h4></div><p>India-ready Tally Prime integration with native GST handling.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/zoho/006b5b" alt="Zoho Books"></div><h4>Zoho Books</h4></div><p>Invoice, vendor, and ledger sync for SMB TMCs running on Zoho.</p><span class="tag">Native</span></div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#1f1f1f"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="11" fill="#fbb917">NS</text></svg></div>
+          <h4>NetSuite</h4>
+        </div>
+        <p>Push reconciled invoices, journals, and revenue entries straight into NetSuite.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#2ca01c"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="10" fill="#fff">qb</text></svg></div>
+          <h4>QuickBooks</h4>
+        </div>
+        <p>Two-way sync for invoice posting, payment match, and tax handling.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#13b5ea"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">X</text></svg></div>
+          <h4>Xero</h4>
+        </div>
+        <p>Automated bank feed reconciliation for global TMC operations.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#0a6ed1"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="800" font-size="10" fill="#fff" letter-spacing="0.05em">SAP</text></svg></div>
+          <h4>SAP</h4>
+        </div>
+        <p>Enterprise-grade integration via SAP BTP for large multi-entity TMCs.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#d62828"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">T</text></svg></div>
+          <h4>Tally</h4>
+        </div>
+        <p>India-ready Tally Prime integration with native GST handling.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#e42527"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">Z</text></svg></div>
+          <h4>Zoho Books</h4>
+        </div>
+        <p>Invoice, vendor, and ledger sync for SMB TMCs running on Zoho.</p>
+        <span class="tag">Native</span>
+      </div>
     </div>
 
-    <div class="cat-title">CRM, Sales &amp; Service</div>
+    <div class="cat-title">CRM, sales, and service</div>
     <div class="int-grid">
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/salesforce/006b5b" alt="Salesforce"></div><h4>Salesforce</h4></div><p>Account, contact, and ticket sync — surface VantisCorp activity inside Service Cloud.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/hubspot/006b5b" alt="HubSpot"></div><h4>HubSpot</h4></div><p>Lead capture, pipeline, and ticketing automation for customer-success teams.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/zoho/006b5b" alt="Zoho CRM"></div><h4>Zoho CRM</h4></div><p>Two-way contact, deal, and traveler profile sync with Zoho CRM.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/zendesk/006b5b" alt="Zendesk"></div><h4>Zendesk</h4></div><p>Auto-create and resolve tickets when the Servicing Agent acts on traveler requests.</p><span class="tag">Native</span></div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#00a1e0"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="10" fill="#fff">sf</text></svg></div>
+          <h4>Salesforce</h4>
+        </div>
+        <p>Account, contact, and ticket sync. Surface VantisCorp activity inside Service Cloud.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#ff7a59"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">H</text></svg></div>
+          <h4>HubSpot</h4>
+        </div>
+        <p>Lead capture, pipeline, and ticketing automation for customer-success teams.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#e42527"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">Z</text></svg></div>
+          <h4>Zoho CRM</h4>
+        </div>
+        <p>Two-way contact, deal, and traveler profile sync with Zoho CRM.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#03363d"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="11" fill="#fff">ZD</text></svg></div>
+          <h4>Zendesk</h4>
+        </div>
+        <p>Auto-create and resolve tickets when the Servicing Agent acts on traveler requests.</p>
+        <span class="tag">Native</span>
+      </div>
     </div>
 
-    <div class="cat-title">Communication &amp; Productivity</div>
+    <div class="cat-title">Communication and productivity</div>
     <div class="int-grid">
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/slack/006b5b" alt="Slack"></div><h4>Slack</h4></div><p>Approvals, agent updates, and traveler alerts pushed straight into Slack channels and DMs.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/microsoftteams/006b5b" alt="Microsoft Teams"></div><h4>Microsoft Teams</h4></div><p>Approval cards and live status updates inside Microsoft Teams — no app switching.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/whatsapp/006b5b" alt="WhatsApp"></div><h4>WhatsApp</h4></div><p>Traveler servicing on WhatsApp — handled end-to-end by the Servicing Agent.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/gmail/006b5b" alt="Gmail / Outlook"></div><h4>Gmail / Outlook</h4></div><p>Auto-parse incoming traveler emails and route to the right agent.</p><span class="tag">Native</span></div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#4a154b"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="13" fill="#ecb22e">#</text></svg></div>
+          <h4>Slack</h4>
+        </div>
+        <p>Approvals, agent updates, and traveler alerts pushed straight into Slack channels and DMs.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#4b53bc"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">T</text></svg></div>
+          <h4>Microsoft Teams</h4>
+        </div>
+        <p>Approval cards and live status updates inside Microsoft Teams. No app switching.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#25d366"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">W</text></svg></div>
+          <h4>WhatsApp</h4>
+        </div>
+        <p>Traveler servicing on WhatsApp, handled end to end by the Servicing Agent.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#ea4335"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">M</text></svg></div>
+          <h4>Gmail and Outlook</h4>
+        </div>
+        <p>Auto-parse incoming traveler emails and route to the right agent.</p>
+        <span class="tag">Native</span>
+      </div>
     </div>
 
-    <div class="cat-title">Identity, Data &amp; Security</div>
+    <div class="cat-title">Identity, data, and security</div>
     <div class="int-grid">
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/okta/006b5b" alt="Okta"></div><h4>Okta</h4></div><p>SSO, SCIM provisioning, and role-based access for your entire team.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/microsoftazure/006b5b" alt="Entra ID"></div><h4>Entra ID</h4></div><p>Enterprise SSO and conditional access for Microsoft-first environments.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/snowflake/006b5b" alt="Snowflake"></div><h4>Snowflake</h4></div><p>Stream every agent action to your warehouse for analytics and audit.</p><span class="tag">Native</span></div>
-      <div class="int-card"><div class="ic-head"><div class="ic-logo"><img src="https://cdn.simpleicons.org/amazons3/006b5b" alt="Amazon S3"></div><h4>AWS S3</h4></div><p>Archive invoices, audit logs, and trip documents in your own cloud bucket.</p><span class="tag">Native</span></div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#007dc1"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">O</text></svg></div>
+          <h4>Okta</h4>
+        </div>
+        <p>SSO, SCIM provisioning, and role-based access for your entire team.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#0078d4"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="12" fill="#fff">E</text></svg></div>
+          <h4>Entra ID</h4>
+        </div>
+        <p>Enterprise SSO and conditional access for Microsoft-first environments.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#29b5e8"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="14" fill="#fff">❄</text></svg></div>
+          <h4>Snowflake</h4>
+        </div>
+        <p>Stream every agent action to your warehouse for analytics and audit.</p>
+        <span class="tag">Native</span>
+      </div>
+      <div class="int-card">
+        <div class="ic-head">
+          <div class="ic-logo"><svg class="lmark" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#ff9900"/><text x="12" y="13" text-anchor="middle" dominant-baseline="central" font-family="Inter" font-weight="700" font-size="10" fill="#1f1f1f">S3</text></svg></div>
+          <h4>AWS S3</h4>
+        </div>
+        <p>Archive invoices, audit logs, and trip documents in your own cloud bucket.</p>
+        <span class="tag">Native</span>
+      </div>
     </div>
 
   </div>
 </section>
 
 <!-- API CALLOUT -->
-<section style="background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+<section style="background:#fff; border-top:1px solid var(--hairline); border-bottom:1px solid var(--hairline);">
   <div class="container">
     <div class="two-col">
       <div>
         <span class="eyebrow">Developer-friendly</span>
         <h2 class="mt-6">Don't see your tool? Build it in a day.</h2>
-        <p class="lead mt-6">Every VantisCorp agent exposes a clean REST and webhook API. If a workflow lives in a system we don't natively integrate with, your team — or ours — can wire it up in a few hundred lines of code.</p>
+        <p class="lead mt-6">Every VantisCorp agent exposes a clean REST and webhook API. If a workflow lives in a system we don't natively integrate with, your team (or ours) can wire it up in a few hundred lines of code.</p>
         <div class="actions mt-8">
-          <a class="btn btn-dark" href="#">Read API Docs</a>
-          <a class="btn btn-ghost" href="#">Request an integration ›</a>
+          <a class="btn btn-dark" href="#">Read API docs</a>
+          <a class="btn btn-ghost" href="#">Request an integration <span aria-hidden="true">›</span></a>
         </div>
       </div>
       <div class="mock">
         <div class="mock-title">POST /v1/agents/booking/run</div>
         <div class="mock-sub">Trigger the Booking Agent with a request payload</div>
-        <pre style="margin:14px 0 0; padding:14px; background:#0a0a0a; color:#a2ebd8; border-radius:8px; font-size:12px; overflow:auto;">{
+<pre style="margin:14px 0 0; padding:16px; background:#0b1418; color:#a2ebd8; border-radius:10px; font-size:12.5px; line-height:1.55; overflow:auto; font-family: 'SF Mono', Menlo, Consolas, monospace;">{
   "traveler": "michelle.chen@acme.com",
   "origin": "JFK",
   "destination": "LAX",
@@ -128,7 +316,7 @@
 }</pre>
         <div class="mock-row" style="margin-top:14px;">
           <span><strong>200 OK</strong> · UA 2847 booked · $136 saved</span>
-          <span class="badge green">Auto-Resolved</span>
+          <span class="badge green">Auto-resolved</span>
         </div>
       </div>
     </div>
@@ -140,12 +328,12 @@
   <div class="container">
     <div class="cta-banner">
       <h2>Ready to connect your stack?</h2>
-      <p>Talk to our solutions team about your current systems — we'll map a 4-week path to live, no rip-and-replace required.</p>
+      <p>Talk to our solutions team about your current systems. We'll map a 4-week path to live, no rip and replace required.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#">Schedule your demo</a>
-        <a class="btn btn-ghost" href="#">Talk to our team ›</a>
+        <a class="btn btn-ghost" href="#">Talk to our team <span aria-hidden="true">›</span></a>
       </div>
-      <div class="fine">No commitment · Personalized walkthrough.</div>
+      <div class="fine">No commitment. Personalized walkthrough.</div>
     </div>
   </div>
 </section>
@@ -154,7 +342,7 @@
   <div class="container">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="index.html"><svg viewBox="0 0 32 32" fill="none" style="width:24px;height:24px"><path d="M4 6 L16 28 L28 6 L22 6 L16 18 L10 6 Z" fill="#0a0a0a"/><path d="M14 6 L16 10 L18 6 Z" fill="#14cf93"/></svg>VantisCorp</a>
+        <a class="brand" href="index.html"><svg viewBox="0 0 32 32" fill="none" style="width:24px;height:24px"><path d="M4 6 L16 28 L28 6 L22 6 L16 18 L10 6 Z" fill="#0b1418"/><path d="M14 6 L16 10 L18 6 Z" fill="#14cf93"/></svg>VantisCorp</a>
         <p style="margin-top:14px; max-width:300px; font-size:14px;">The AI operating system purpose-built for TMCs.</p>
       </div>
       <div><h5>Features</h5><ul>
@@ -171,10 +359,12 @@
     </div>
     <div class="foot-bottom">
       <span>Copyright © 2026 VantisCorp</span>
-      <div class="socials"><a href="#">▶</a><a href="#">◎</a><a href="#">f</a></div>
+      <div class="socials"><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></div>
     </div>
   </div>
 </footer>
+
+<script src="js/animations.js"></script>
 
 </body>
 </html>

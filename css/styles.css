@@ -119,15 +119,16 @@ p { color: var(--text-2); margin: 14px 0 0; }
   display: flex; align-items: center; justify-content: space-between; width: 100%;
 }
 .brand {
-  display: inline-flex; align-items: center; gap: 8px;
-  font-weight: 700;
-  font-size: 17px; letter-spacing: -0.018em;
+  display: inline-flex; align-items: center; gap: 11px;
+  font-weight: 800;
+  font-size: 20px; letter-spacing: -0.025em;
   color: var(--ink);
 }
-.brand svg { width: 26px; height: 26px; }
-.nav { display: flex; align-items: center; gap: 32px; }
+.brand svg { width: 38px; height: 38px; flex-shrink: 0; }
+.nav { display: flex; align-items: center; gap: 36px; }
 .nav a {
-  font-size: 14px; font-weight: 500; color: var(--text);
+  font-size: 14px; font-weight: 600; color: var(--text);
+  letter-spacing: -0.005em;
   transition: color var(--d-fast) var(--ease-out);
   position: relative;
 }
@@ -139,8 +140,29 @@ p { color: var(--text-2); margin: 14px 0 0; }
 .nav a:hover { color: var(--ink); }
 .nav a:hover::after, .nav a.active::after { right: 0; }
 .nav a.active { color: var(--ink); }
-.nav-search { font-size: 14px; color: var(--muted); cursor: pointer; }
-.menu-toggle { display: none; background: none; border: 0; font-size: 22px; cursor: pointer; color: var(--ink); }
+.nav-search { display: inline-flex; align-items: center; justify-content: center; color: var(--muted); cursor: pointer; padding: 6px; border-radius: 6px; transition: color var(--d-fast) var(--ease-out), background var(--d-fast) var(--ease-out); }
+.nav-search:hover { color: var(--ink); background: var(--surface-2); }
+.nav-search svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 2; fill: none; }
+.menu-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; color: var(--ink); }
+.menu-toggle svg { width: 24px; height: 24px; stroke: currentColor; stroke-width: 2; fill: none; }
+
+/* ---------- Notibar (Navan-style) ---------- */
+.notibar { background: var(--ink); color: #fff; font-size: 13px; line-height: 1.4; }
+.notibar .container { display: flex; align-items: center; justify-content: center; padding: 9px 24px; gap: 14px; position: relative; }
+.notibar-text { display: inline-flex; align-items: center; gap: 8px; }
+.notibar-tag { display: inline-block; background: var(--bright-green); color: var(--ink); font-weight: 700; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; }
+.notibar a { color: #fff; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4); padding-bottom: 1px; transition: border-color var(--d-fast) var(--ease-out); }
+.notibar a:hover { border-bottom-color: #fff; }
+.notibar-close { position: absolute; right: 18px; top: 50%; transform: translateY(-50%); background: none; border: 0; color: rgba(255,255,255,0.65); cursor: pointer; padding: 4px; display: inline-flex; align-items: center; }
+.notibar-close:hover { color: #fff; }
+.notibar-close svg { width: 14px; height: 14px; stroke: currentColor; stroke-width: 2; fill: none; }
+.notibar.is-hidden { display: none; }
+
+/* ---------- Featured hero image ---------- */
+.featured-image { width: 100%; max-width: 1180px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-2); border: 1px solid var(--hairline); aspect-ratio: 21 / 9; }
+.featured-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.page-hero-with-image { padding-bottom: 60px; }
+.page-hero-with-image + section.featured-section { padding-top: 0; padding-bottom: 60px; }
 
 /* ---------- Buttons ---------- */
 .btn {

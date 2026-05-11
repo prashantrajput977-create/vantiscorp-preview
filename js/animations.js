@@ -74,10 +74,29 @@
     els.forEach(c => obs.observe(c));
   }
 
+  function notibar() {
+    var bar = document.querySelector('.notibar');
+    if (!bar) return;
+    try {
+      if (localStorage.getItem('vc_notibar_dismissed') === '1') {
+        bar.classList.add('is-hidden');
+        return;
+      }
+    } catch (e) {}
+    var btn = bar.querySelector('.notibar-close');
+    if (btn) {
+      btn.addEventListener('click', function () {
+        bar.classList.add('is-hidden');
+        try { localStorage.setItem('vc_notibar_dismissed', '1'); } catch (e) {}
+      });
+    }
+  }
+
   function init() {
     autoTag();
     setupObserver();
     counters();
+    notibar();
   }
 
   if (document.readyState === 'loading') {

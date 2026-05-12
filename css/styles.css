@@ -53,8 +53,8 @@ body {
   font-feature-settings: 'ss01', 'cv11', 'cv02';
   background: var(--surface-2);
   color: var(--text);
-  font-size: 16.5px;
-  line-height: 1.55;
+  font-size: 18px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -82,16 +82,16 @@ h1, h2, h3, h4, h5 {
   letter-spacing: -0.022em;
   line-height: 1.08;
   margin: 0;
-  font-weight: 700;
+  font-weight: 800;
 }
-h1 { font-size: clamp(40px, 5.4vw, 68px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.04; }
-h2 { font-size: clamp(30px, 3.6vw, 46px); letter-spacing: -0.025em; line-height: 1.1; }
-h3 { font-size: 22px; font-weight: 600; letter-spacing: -0.015em; }
+h1 { font-size: clamp(40px, 5.0vw, 64px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+h2 { font-size: clamp(32px, 3.6vw, 48px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.1; }
+h3 { font-size: 22px; font-weight: 700; letter-spacing: -0.015em; }
 h4 { font-size: 16px; font-weight: 600; }
 h5 { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 
-p { color: var(--text-2); margin: 14px 0 0; }
-.lead { font-size: 19px; line-height: 1.55; color: var(--text-2); max-width: var(--measure); }
+p { color: var(--text-2); margin: 14px 0 0; font-size: 18px; line-height: 1.6; }
+.lead { font-size: 19px; line-height: 1.6; color: var(--text-2); max-width: var(--measure); }
 .eyebrow {
   display: inline-block;
   font-size: 12px; font-weight: 700;
@@ -112,8 +112,15 @@ p { color: var(--text-2); margin: 14px 0 0; }
   display: flex;
   align-items: center;
 }
-.site-header .container {
+.site-header .container,
+.site-header .header-inner {
   display: flex; align-items: center; justify-content: space-between; width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+@media (max-width: 720px) {
+  .site-header .header-inner { padding: 0 22px; }
 }
 .site-header { height: 76px; }
 .brand {
@@ -133,6 +140,20 @@ p { color: var(--text-2); margin: 14px 0 0; }
 }
 .nav a:not(.nav-cta) {
   opacity: 0.78;
+}
+/* Uppercase variant (matches live vantiscorp.com nav) */
+.nav--upper a:not(.nav-cta) {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 12.5px;
+  font-weight: 600;
+  opacity: 0.85;
+}
+.nav--upper .nav-has-drop > a {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 12.5px;
+  font-weight: 600;
 }
 .nav-cta {
   display: inline-flex; align-items: center; gap: 6px;

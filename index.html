@@ -1,345 +1,399 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>VantisCorp. From request to resolution. Fully autonomous.</title>
-<meta name="description" content="VantisCorp is the AI operating system purpose-built for TMCs. Autonomous agents handle booking, compliance, servicing, and finance." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/home.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VantisCorp</title>
+  <meta name="description" content="VantisCorp is the AI operating system purpose-built for TMCs. Autonomous agents handle booking, compliance, servicing, and finance so you scale revenue without scaling headcount." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
 
-<!-- NOTIBAR -->
-<div class="notibar" role="region" aria-label="Announcement">
-  <div class="container">
-    <span class="notibar-text">
-      <span class="notibar-tag">New</span>
-      <span class="notibar-headline">Servicing Agent is live. Autonomous changes, cancellations, and rebookings.</span>
-      <a class="notibar-cta" href="servicing-agent.html">See what it does <span class="notibar-arrow" aria-hidden="true">›</span></a>
-    </span>
-    <button class="notibar-close" aria-label="Dismiss announcement">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 6l12 12M6 18L18 6" stroke-linecap="round"/></svg>
-    </button>
-  </div>
-</div>
-
-<!-- HEADER -->
-<header class="site-header">
-  <div class="container">
-    <a class="brand" href="index.html" aria-label="VantisCorp"><img src="images/vantis-logo.png" alt="VantisCorp" /></a>
-    <nav class="nav">
-      <div class="nav-has-drop"><a href="platform.html">Agents</a>
-        <div class="nav-drop" role="menu">
-          <div class="nav-drop-label">AI Agents</div>
-          <div class="nav-drop-grid">
-            <a href="booking-agent.html" role="menuitem">
-              <span class="nav-drop-ico book"><i class="fa-solid fa-plane-up"></i></span>
-              <span class="nav-drop-text">
-                <span class="nav-drop-title">Booking Agent</span>
-                <span class="nav-drop-desc">AI-ranked search across every fare source</span>
-              </span>
-            </a>
-            <a href="compliance-agent.html" role="menuitem">
-              <span class="nav-drop-ico comp"><i class="fa-solid fa-shield-halved"></i></span>
-              <span class="nav-drop-text">
-                <span class="nav-drop-title">Compliance Agent</span>
-                <span class="nav-drop-desc">Real-time policy and approvals</span>
-              </span>
-            </a>
-            <a href="finance-agent.html" role="menuitem">
-              <span class="nav-drop-ico fin"><i class="fa-solid fa-chart-line"></i></span>
-              <span class="nav-drop-text">
-                <span class="nav-drop-title">Finance Agent</span>
-                <span class="nav-drop-desc">Auto-reconciliation and close</span>
-              </span>
-            </a>
-            <a href="servicing-agent.html" role="menuitem">
-              <span class="nav-drop-ico serv"><i class="fa-solid fa-money-bill-transfer"></i></span>
-              <span class="nav-drop-text">
-                <span class="nav-drop-title">Servicing Agent</span>
-                <span class="nav-drop-desc">Autonomous changes and rebookings</span>
-              </span>
-            </a>
-          </div>
-          <div class="nav-drop-foot">
-            <a href="platform.html">See the full platform <span aria-hidden="true">›</span></a>
-            <span class="muted-note">Four agents. One operating system.</span>
-          </div>
-        </div>
-      </div>
-      <a href="integrations.html">Integration</a>
-      
-      <a href="about.html">Company</a>
-      <a href="#">Contact Us</a>
-      <a class="nav-search" href="#" aria-label="Search"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5" stroke-linecap="round"/></svg></a>
-    </nav>
-    <button class="menu-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg></button>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="v-hero">
-  <div class="container v-hero-inner">
-    <div class="v-content">
-      <h1>From request to resolution. Fully autonomous.</h1>
-      <p>The AI operating system purpose-built for travel management companies. Four agents handle booking, compliance, servicing, and finance, so you scale revenue without scaling headcount.</p>
-      <div class="v-stats">
-        <div class="stat-item"><h2><span class="counter" data-target="11">0</span>K+</h2><p>Bookings Managed Monthly</p></div>
-        <div class="stat-item"><h2><span class="counter" data-target="11">0</span>+</h2><p>Countries</p></div>
-        <div class="stat-item"><h2><span class="counter" data-target="22">0</span>+</h2><p>TMCs Worldwide</p></div>
-      </div>
-      <div class="v-actions">
-        <a href="#" class="btn btn-primary">Book a demo</a>
-        <a href="#" class="btn-tour">Watch platform tour <span aria-hidden="true">›</span></a>
-      </div>
-    </div>
-    <div class="v-graphic">
-      <div class="dash-row">
-        <div class="dash-box"><strong>$284K</strong> <span class="up">+8%</span><div>Revenue</div></div>
-        <div class="dash-box"><strong>847</strong> <span class="up">+12%</span><div>Bookings today</div></div>
-        <div class="dash-box"><strong>1.2m</strong> <span class="down">-34%</span><div>Avg handle</div></div>
-      </div>
-      <div class="floating-cards">
-        <div class="f-card"><i class="fa-solid fa-plane-up"></i><div class="f-card-content"><strong>Booking Agent</strong><br><small>Auto-booked UA2847</small></div><div class="saved">$136 saved</div></div>
-        <div class="f-card"><i class="fa-solid fa-shield-halved"></i><div class="f-card-content"><strong>Compliance Agent</strong><br><small>Policy exception flagged</small></div><div class="mgr">Manager</div></div>
-        <div class="f-card"><i class="fa-solid fa-chart-simple"></i><div class="f-card-content"><strong>Finance Agent</strong><br><small>3 invoices reconciled</small></div><div class="saved">($12.4K)</div></div>
-      </div>
-      <div class="v-shape-mask"></div>
+  <!-- NOTIBAR (our addition, sticky at top per CEO) -->
+  <div class="notibar" role="region" aria-label="Announcement">
+    <div class="container">
+      <span class="notibar-text">
+        <span class="notibar-tag">New</span>
+        <span class="notibar-headline">Servicing Agent is live. Autonomous changes, cancellations, and rebookings.</span>
+        <a class="notibar-cta" href="servicing-agent.html">See what it does <span class="notibar-arrow" aria-hidden="true">›</span></a>
+      </span>
+      <button class="notibar-close" aria-label="Dismiss announcement">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 6l12 12M6 18L18 6" stroke-linecap="round"/></svg>
+      </button>
     </div>
   </div>
-</section>
 
-<!-- AGENTS INTRO -->
-<section style="text-align:center;">
-  <div class="container">
-    <span class="eyebrow">Your AI workforce</span>
-    <h2 class="mt-6">Four agents. Every workflow. Always on.</h2>
-    <p class="lead mt-6" style="margin-left:auto; margin-right:auto;">Each agent is purpose-built for a critical TMC workflow. They run 24/7 inside your business rules, with full transparency into every action.</p>
-  </div>
-</section>
-
-<!-- BOOKING + COMPLIANCE -->
-<section style="padding-top:0;">
-  <div class="container">
-    <div class="agent-features">
-      <div class="agent-column">
-        <div class="agent-header"><i class="fa-solid fa-plane-up"></i><h3>Booking Agent</h3></div>
-        <div class="agent-title">AI-ranked search across every fare source.</div>
-        <p class="agent-desc">Compares fares, applies your negotiated rates, resolves conflicts, and picks the best in-policy option in seconds.</p>
-        <div class="agent-card">
-          <div class="agent-card-head"><strong>AI-ranked results <span class="muted">JFK to LAX, Mar 15</span></strong> <i class="fa-solid fa-circle-check"></i></div>
-          <div class="search-row row-1"><span class="res-id">UA 2847</span><span class="res-price">$342</span><span class="res-badge badge-best">Best match</span></div>
-          <div class="search-row row-2"><span class="res-id">DL 1153</span><span class="res-price">$389</span><span class="res-badge badge-policy">In policy</span></div>
-          <div class="search-row row-3"><span class="res-id">AA 0621</span><span class="res-price">$478</span><span class="res-badge badge-over">Over budget</span></div>
-          <div class="auto-line">Auto-selected UA 2847. <span class="hi">Saves $136, 97% policy score.</span></div>
-        </div>
-        <a class="more-link" href="booking-agent.html">Learn more <span aria-hidden="true">›</span></a>
-      </div>
-      <div class="agent-column">
-        <div class="agent-header"><i class="fa-solid fa-shield-halved"></i><h3>Compliance Agent</h3></div>
-        <div class="agent-title">Real-time policy and approvals.</div>
-        <p class="agent-desc">Catches exceptions before they happen, routes approvals with full context, and keeps every decision audit-ready.</p>
-        <div class="agent-card">
-          <div class="agent-card-head"><strong>Real-time policy</strong> <i class="fa-solid fa-circle-check"></i></div>
-          <div class="comp-stats">
-            <div class="stat-box"><span class="stat-num teal">98.6%</span><span class="stat-label">Compliance</span></div>
-            <div class="stat-box"><span class="stat-num blue">3</span><span class="stat-label">Pending</span></div>
-            <div class="stat-box"><span class="stat-num amber">12</span><span class="stat-label">Auto-resolved</span></div>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="VantisCorp"><img src="images/vantis-logo.png" alt="VantisCorp" /></a>
+      <nav class="nav nav--upper">
+        <div class="nav-has-drop"><a href="#agents">Featues</a>
+          <div class="nav-drop" role="menu">
+            <div class="nav-drop-label">AI Agents</div>
+            <div class="nav-drop-grid">
+              <a href="booking-agent.html" role="menuitem">
+                <span class="nav-drop-ico book"><i class="fa-solid fa-plane-up"></i></span>
+                <span class="nav-drop-text">
+                  <span class="nav-drop-title">Booking Agent</span>
+                  <span class="nav-drop-desc">AI-ranked search across every fare source</span>
+                </span>
+              </a>
+              <a href="compliance-agent.html" role="menuitem">
+                <span class="nav-drop-ico comp"><i class="fa-solid fa-shield-halved"></i></span>
+                <span class="nav-drop-text">
+                  <span class="nav-drop-title">Compliance Agent</span>
+                  <span class="nav-drop-desc">Real-time policy and approvals</span>
+                </span>
+              </a>
+              <a href="finance-agent.html" role="menuitem">
+                <span class="nav-drop-ico fin"><i class="fa-solid fa-chart-line"></i></span>
+                <span class="nav-drop-text">
+                  <span class="nav-drop-title">Finance Agent</span>
+                  <span class="nav-drop-desc">Auto-reconciliation and close</span>
+                </span>
+              </a>
+              <a href="servicing-agent.html" role="menuitem">
+                <span class="nav-drop-ico serv"><i class="fa-solid fa-money-bill-transfer"></i></span>
+                <span class="nav-drop-text">
+                  <span class="nav-drop-title">Servicing Agent</span>
+                  <span class="nav-drop-desc">Autonomous changes and rebookings</span>
+                </span>
+              </a>
+            </div>
+            <div class="nav-drop-foot">
+              <a href="platform.html">See the full platform <span aria-hidden="true">›</span></a>
+              <span class="muted-note">Four agents. One operating system.</span>
+            </div>
           </div>
-          <div class="log-item">VIP override approved, J. Park</div>
-          <div class="log-item">Rate cap exceeded, routed to manager</div>
-          <div class="log-item">Hotel policy exception auto-denied</div>
         </div>
-        <a class="more-link" href="compliance-agent.html">Learn more <span aria-hidden="true">›</span></a>
+        <a href="integrations.html">Integration</a>
+        <a href="#">Resources</a>
+        <a href="about.html">Company</a>
+        <a href="#">Contact Us</a>
+        <button class="nav-search" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>From request to resolution.<br/>Fully autonomous.</h1>
+        <p class="hero-lead">VantisCorp is the AI operating system purpose-built for TMCs. Autonomous agents handle booking, compliance, servicing, and finance so you scale revenue without scaling headcount.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>50K+</strong><span>Bookings Managed<br/>Monthly</span></div>
+          <div class="hero-stat"><strong>30+</strong><span>Countries</span></div>
+          <div class="hero-stat"><strong>120+</strong><span>TMCs Worldwide</span></div>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#cta">Book a Demo</a>
+          <a class="btn btn-text" href="platform.html">Watch Platform Tour <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-bg-img" src="images/live/hero-bg.png" alt="" />
+        <!-- Top metrics row -->
+        <div class="hero-card hero-card-metrics">
+          <div class="metric"><span class="m-val">$284K <em>+8%</em></span><span class="m-lbl">Revenue</span></div>
+          <div class="metric"><span class="m-val">847 <em>+12%</em></span><span class="m-lbl">Bookings Today</span></div>
+          <div class="metric"><span class="m-val">1.2m <em>34%</em></span><span class="m-lbl">Avg Handle</span></div>
+        </div>
+        <!-- Floating notification cards -->
+        <div class="hero-card noti">
+          <span class="noti-ico book"><i class="fa-solid fa-plane-up"></i></span>
+          <div class="noti-body">
+            <div class="noti-title">Booking Agent</div>
+            <div class="noti-sub">Auto-Booked UA2847</div>
+          </div>
+          <span class="noti-badge green">$136 saved</span>
+        </div>
+        <div class="hero-card noti">
+          <span class="noti-ico comp"><i class="fa-solid fa-shield-halved"></i></span>
+          <div class="noti-body">
+            <div class="noti-title">Compliance Agent</div>
+            <div class="noti-sub">Policy Exception Flagged</div>
+          </div>
+          <span class="noti-badge mint">Manager</span>
+        </div>
+        <div class="hero-card noti">
+          <span class="noti-ico fin"><i class="fa-solid fa-chart-line"></i></span>
+          <div class="noti-body">
+            <div class="noti-title">Finance Agent</div>
+            <div class="noti-sub">3 Invoices Reconciled</div>
+          </div>
+          <span class="noti-badge soft">($12.4K)</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FINANCE + SERVICING -->
-<section style="padding-top:0;">
-  <div class="container">
-    <div class="agent-features">
-      <div class="agent-column">
-        <div class="agent-header"><i class="fa-solid fa-chart-line"></i><h3>Finance Agent</h3></div>
-        <div class="agent-title">Auto-reconciliation and financial close.</div>
-        <p class="agent-desc">Matches invoices to bookings, flags anomalies, handles GST and tax, and closes the books in hours.</p>
-        <div class="agent-card">
-          <div class="agent-card-head"><strong>Auto-reconciliation and close</strong> <i class="fa-solid fa-circle-check"></i></div>
-          <div class="comp-stats">
-            <div class="stat-box"><span class="stat-num teal">$847K</span><span class="stat-label">Reconciled</span></div>
-            <div class="stat-box"><span class="stat-num blue">$12.4K</span><span class="stat-label">Flagged</span></div>
-            <div class="stat-box"><span class="stat-num amber">$63K</span><span class="stat-label">Saved</span></div>
-          </div>
-          <div class="auto-line">3 invoices auto-matched. <span class="hi">$12,400 cleared.</span></div>
-        </div>
-        <a class="more-link" href="finance-agent.html">Learn more <span aria-hidden="true">›</span></a>
+  <!-- AGENTS INTRO -->
+  <section class="agents-intro">
+    <div class="container">
+      <div class="eyebrow-v"><img src="images/vantis-v.png" alt="" /><span>Your AI workforce</span></div>
+      <h3 class="section-h">Four Agents. Every workflow. Always on.</h3>
+      <p class="section-sub">Each agent is purpose-built for a critical TMC workflow operating 24/7 inside your business rules,<br/> with full transparency into every action.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING AGENT -->
+  <section id="agents" class="agent-row">
+    <div class="container two-up">
+      <div class="agent-text">
+        <span class="agent-eyebrow">Booking Agent</span>
+        <h2 class="agent-h">AI-Ranked Search Across All Content Sources</h2>
+        <p class="agent-desc">Compares fares, applies negotiated rates, resolves conflicts, and auto-selects the best policy-compliant option in seconds.</p>
       </div>
-      <div class="agent-column">
-        <div class="agent-header"><i class="fa-solid fa-money-bill-transfer"></i><h3>Servicing Agent</h3></div>
-        <div class="agent-title">Autonomous changes and rebookings.</div>
-        <p class="agent-desc">Handles traveler changes, cancellations, and refunds end to end. Your consultants only see the cases that actually need them.</p>
-        <div class="agent-card">
-          <div class="agent-card-head"><strong>Servicing Agent</strong> <i class="fa-solid fa-circle-check"></i></div>
-          <div class="comp-stats">
-            <div class="stat-box"><span class="stat-num teal">24</span><span class="stat-label">Open</span></div>
-            <div class="stat-box"><span class="stat-num blue">18</span><span class="stat-label">Auto-resolved</span></div>
-            <div class="stat-box"><span class="stat-num amber">1.2m</span><span class="stat-label">Avg time</span></div>
+      <div class="agent-mock">
+        <div class="mock-card">
+          <div class="mock-head">
+            <div><strong>AI-Ranked Results</strong> <span class="muted">JFK → LAX | Mar 15</span></div>
+            <i class="fa-solid fa-circle-check tick"></i>
           </div>
-          <div class="v4-row"><span><strong>M. Chen</strong></span><span class="muted">Rebooking, flight delayed 4h</span><span class="v4-badge auto">Auto-resolved</span></div>
-          <div class="v4-row"><span><strong>R. Patel</strong></span><span class="muted">Hotel change, early check-in</span><span class="v4-badge proc">Processing</span></div>
-          <div class="v4-row"><span><strong>L. Torres</strong></span><span class="muted">Cancel and refund, SFO trip</span><span class="v4-badge pend">Pending</span></div>
+          <div class="mock-fare">
+            <span>UA 2847</span><span>$342</span><span class="pill green">Best Match</span>
+          </div>
+          <div class="mock-fare highlight">
+            <span>DL 1153</span><span>$389</span><span class="pill mint">In Policy</span>
+          </div>
+          <div class="mock-fare">
+            <span>AA 0621</span><span>$478</span><span class="pill red">Over Budget</span>
+          </div>
+          <div class="mock-foot green-text"><strong>Auto-Selected UA 2847</strong> - Saves $136, 97% Policy Score</div>
         </div>
-        <a class="more-link" href="servicing-agent.html">Learn more <span aria-hidden="true">›</span></a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- RESULTS -->
-<section class="tmc-results">
-  <div class="container">
-    <span class="eyebrow">Real outcomes</span>
-    <h2 class="mt-6 center">Results TMCs actually measure.</h2>
-    <div class="v5-grid mt-12">
-      <div class="v5-col up"><div class="v5-label">Faster booking<br>turnaround</div><div class="v5-number col-green">60%</div></div>
-      <div class="v5-col down"><div class="v5-label">Policy compliance<br>rate</div><div class="v5-number col-blue">98%</div></div>
-      <div class="v5-col up"><div class="v5-label">Faster<br>reconciliation</div><div class="v5-number col-yellow">3x</div></div>
-      <div class="v5-col down"><div class="v5-label">More bookings,<br>same team</div><div class="v5-number col-teal">40%</div></div>
+  <!-- COMPLIANCE AGENT -->
+  <section class="agent-row">
+    <div class="container two-up">
+      <div class="agent-text">
+        <span class="agent-eyebrow">Compliance Agent</span>
+        <h2 class="agent-h">Real-Time Policy Enforcement &amp; Approvals</h2>
+        <p class="agent-desc">Catches exceptions before they happen, auto-routes approvals with context, and maintains audit-ready compliance logs.</p>
+      </div>
+      <div class="agent-mock">
+        <div class="mock-card">
+          <div class="mock-head">
+            <div><strong>Real-Time Policy</strong></div>
+            <i class="fa-solid fa-circle-check tick"></i>
+          </div>
+          <div class="mock-3stats">
+            <div><strong class="big green-text">98.6%</strong><span>Compliance</span></div>
+            <div><strong class="big blue-text">3</strong><span>Pending</span></div>
+            <div><strong class="big amber-text">12</strong><span>Auto-Resolved</span></div>
+          </div>
+          <div class="mock-row"><span>VIP Override Approved - J. Park</span></div>
+          <div class="mock-row"><span>Rate Cap Exceeded - Routed To Manager</span></div>
+          <div class="mock-row"><span>Hotel Policy Exception Auto-Denied</span></div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- GET STARTED -->
-<section class="get-started" style="text-align:center;">
-  <div class="container">
-    <span class="eyebrow">Get started</span>
-    <h2 class="mt-6">Live in weeks, not months.</h2>
-    <div class="steps mt-12">
+  <!-- FINANCE AGENT -->
+  <section class="agent-row">
+    <div class="container two-up">
+      <div class="agent-text">
+        <span class="agent-eyebrow">Finance Agent</span>
+        <h2 class="agent-h">Auto-Reconciliation &amp; Financial Close</h2>
+        <p class="agent-desc">Matches invoices to bookings, flags anomalies, handles GST/tax, and closes books in hours - not days.</p>
+      </div>
+      <div class="agent-mock">
+        <div class="mock-card">
+          <div class="mock-head">
+            <div><strong>Auto-Reconciliation &amp; Financial Close</strong></div>
+            <i class="fa-solid fa-circle-check tick"></i>
+          </div>
+          <div class="mock-3stats">
+            <div><strong class="big green-text">$847K</strong><span>Reconciled</span></div>
+            <div><strong class="big amber-text">$12.4K</strong><span>Flagged</span></div>
+            <div><strong class="big blue-text">$63K</strong><span>Saved</span></div>
+          </div>
+          <div class="mock-foot green-text"><strong>3 Invoices Auto-Matched</strong> - $12,400 Cleared</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICING AGENT -->
+  <section class="agent-row">
+    <div class="container two-up">
+      <div class="agent-text">
+        <span class="agent-eyebrow">Servicing Agent</span>
+        <h2 class="agent-h">Autonomous Changes &amp; Rebookings</h2>
+        <p class="agent-desc">Handles traveler changes, cancellations, and refunds autonomously - no human intervention for routine requests.</p>
+      </div>
+      <div class="agent-mock">
+        <div class="mock-card">
+          <div class="mock-head">
+            <div><strong>Servicing Agent</strong></div>
+            <i class="fa-solid fa-circle-check tick"></i>
+          </div>
+          <div class="mock-3stats">
+            <div><strong class="big amber-text">24</strong><span>Open</span></div>
+            <div><strong class="big green-text">18</strong><span>Auto-Resolved</span></div>
+            <div><strong class="big blue-text">1.2M</strong><span>Avg Time</span></div>
+          </div>
+          <div class="mock-row split"><span><strong>M. Chen</strong> · Rebooking — Flight Delayed 4Hrs</span><span class="pill green">Auto-Resolved</span></div>
+          <div class="mock-row split"><span><strong>R. Patel</strong> · Hotel Change — Early Check-In</span><span class="pill amber">Processing</span></div>
+          <div class="mock-row split"><span><strong>L. Torres</strong> · Cancel &amp; Refund — SFO Trip</span><span class="pill blue">Pending</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="results">
+    <div class="container">
+      <div class="eyebrow-v center"><img src="images/vantis-v.png" alt="" /><span>Real Outcomes</span></div>
+      <h2 class="results-h">Results TMCs actually measure.</h2>
+      <div class="results-grid">
+        <div class="result-item">
+          <div class="result-label">Faster Booking<br/>Turnaround</div>
+          <div class="result-val green-text">60%</div>
+        </div>
+        <div class="result-item">
+          <div class="result-val blue-text">98%</div>
+          <div class="result-label">Policy Compliance<br/>Rate</div>
+        </div>
+        <div class="result-item">
+          <div class="result-label">Faster<br/>Reconciliation</div>
+          <div class="result-val gold-text">3x</div>
+        </div>
+        <div class="result-item">
+          <div class="result-val green-soft-text">40%</div>
+          <div class="result-label">More Bookings,<br/>Same Team</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET STARTED -->
+  <section class="get-started">
+    <div class="container">
+      <div class="eyebrow-v center"><img src="images/vantis-v.png" alt="" /><span>Get Started</span></div>
+      <h2 class="get-started-h">Live in weeks, not months.</h2>
+    </div>
+    <div class="steps-row">
       <div class="step">
-        <div class="step-illus"><i class="fa-solid fa-plug" style="font-size:28px;color:#006b5b;"></i></div>
-        <h3 class="step-title col-green">Connect</h3>
-        <p>We plug into your existing GDS, mid-office, and finance systems. No rip and replace. Just clean integration.</p>
+        <div class="step-ico"><img src="images/live/1.png" alt="" /></div>
+        <h3 class="step-h step-1">Connect</h3>
+        <p>We plug into your existing GDS, mid-office, and finance systems. No rip-and-replace - just seamless integration.</p>
       </div>
       <div class="step">
-        <div class="step-illus"><i class="fa-solid fa-sliders" style="font-size:28px;color:#14cf93;"></i></div>
-        <h3 class="step-title col-bright">Configure</h3>
-        <p>Set your policies, approval chains, and agent rules. Every agent adapts to your business logic.</p>
+        <div class="step-ico"><img src="images/live/2.png" alt="" /></div>
+        <h3 class="step-h step-2">Configure</h3>
+        <p>Set your policies, approval workflows, and agent rules. Each AI agent adapts to your specific business logic.</p>
       </div>
       <div class="step">
-        <div class="step-illus"><i class="fa-solid fa-rocket" style="font-size:28px;color:#7d8e8b;"></i></div>
-        <h3 class="step-title col-muted">Scale</h3>
-        <p>Go live in weeks. Agents learn from every transaction and get sharper over time.</p>
+        <div class="step-ico"><img src="images/live/3.png" alt="" /></div>
+        <h3 class="step-h step-3">Scale</h3>
+        <p>Go live in weeks. Agents learn from every transaction, getting smarter and more autonomous over time.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- TESTIMONIAL -->
-<section class="home-quote">
-  <div class="container">
-    <div class="quote-body fade-in">
-      <div class="stars">★★★★★</div>
-      <p>"VantisCorp transformed how we operate. Our agents handle 40% more bookings, policy compliance went from a constant headache to fully automated, and our finance team closes books in hours instead of days."</p>
-      <div class="attr"><strong>Sarah Mitchell</strong> &nbsp;·&nbsp; COO, Premier Travel Group</div>
-    </div>
-  </div>
-</section>
-
-<!-- INTEGRATIONS LOGO STRIP -->
-<section style="text-align:center;">
-  <div class="container">
-    <span class="eyebrow">Integrations</span>
-    <h2 class="mt-6">Works with the stack you already run.</h2>
-    <div class="brand-strip mt-12">
-      <div class="logo-cell" title="Amadeus"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="0" fill="currentColor">Amadeus</text></svg></div>
-      <div class="logo-cell" title="Sabre"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="0.02em" fill="currentColor">SABRE</text></svg></div>
-      <div class="logo-cell" title="Travelport"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="currentColor">Travelport</text></svg></div>
-      <div class="logo-cell" title="SAP Concur"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="currentColor">SAP Concur</text></svg></div>
-      <div class="logo-cell" title="NetSuite"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="700" font-size="14" fill="currentColor">NetSuite</text></svg></div>
-      <div class="logo-cell" title="QuickBooks"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="currentColor">QuickBooks</text></svg></div>
-      <div class="logo-cell" title="Xero"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="700" font-size="14" fill="currentColor">Xero</text></svg></div>
-      <div class="logo-cell" title="SAP"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="800" font-size="16" letter-spacing="0.04em" fill="currentColor">SAP</text></svg></div>
-      <div class="logo-cell" title="Tally"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="700" font-size="14" fill="currentColor">Tally</text></svg></div>
-      <div class="logo-cell" title="Salesforce"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="currentColor">Salesforce</text></svg></div>
-      <div class="logo-cell" title="Slack"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="700" font-size="14" fill="currentColor">Slack</text></svg></div>
-      <div class="logo-cell" title="WhatsApp"><svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg"><text x="55" y="14" text-anchor="middle" dominant-baseline="central" font-family="Inter, sans-serif" font-weight="700" font-size="13" fill="currentColor">WhatsApp</text></svg></div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA BANNER -->
-<section>
-  <div class="container">
-    <div class="cta-banner">
-      <h2>Ready to run your TMC on autopilot?</h2>
-      <p>See how VantisCorp agents handle your real bookings, your real policy, your real ledger. 30 minutes, no slides.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#">Schedule your demo</a>
-        <a class="btn btn-ghost" href="#">Talk to our team <span aria-hidden="true">›</span></a>
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <div class="container">
+      <div class="quote-wrap">
+        <span class="quote-mark open">“</span>
+        <p>VantisCorp transformed how we operate. Our agents handle 40% more bookings, policy compliance went from a constant headache to fully automated, and our finance team closes books in hours instead of days.</p>
+        <span class="quote-mark close">”</span>
       </div>
-      <div class="fine">No commitment. Personalized walkthrough.</div>
+      <div class="quote-attrib">
+        <div class="q-name green-text">Sarah Mitchell</div>
+        <div class="q-title">COO, Premier Travel Group</div>
+        <div class="q-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="foot-grid">
+  <!-- INTEGRATIONS STRIP -->
+  <section class="int-strip">
+    <div class="container">
+      <h3 class="int-strip-h">Integrates with our existing stack</h3>
+    </div>
+    <div class="int-strip-imgwrap">
+      <img src="images/live/clients.png" alt="Integrates with Amadeus, Navan, Sabre, Expensify, QuickBooks, Travelport, and more" />
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section id="cta" class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-live">
+        <div class="cta-content">
+          <h2>Ready to run your TMC on autopilot?</h2>
+          <p>See how VantisCorp's AI agents can transform your operations. Get a personalized demo in under 30 minutes.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary-on-green" href="#">Schedule your demo</a>
+            <a class="btn btn-text-white" href="#">Talk to our team <span aria-hidden="true">›</span></a>
+          </div>
+          <div class="cta-fine">No commitment · Personalized walkthrough.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer site-footer-light">
+    <div class="container foot-grid-3">
+      <div class="foot-brand">
+        <a class="brand" href="index.html" aria-label="VantisCorp"><img src="images/vantis-logo.png" alt="VantisCorp" /></a>
+      </div>
       <div>
-        <a class="brand" href="index.html" aria-label="VantisCorp"><img src="images/vantis-logo-white.png" alt="VantisCorp" /></a>
-        <p class="foot-tagline">The AI operating system purpose-built for travel management companies.</p>
-        <div class="socials" style="margin-top:24px;">
-          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-      </div>
-      <div>
-        <h5>Platform</h5>
+        <h4>Features</h4>
         <ul>
-          <li><a href="platform.html">Overview</a></li>
           <li><a href="booking-agent.html">Booking Agent</a></li>
           <li><a href="compliance-agent.html">Compliance Agent</a></li>
           <li><a href="finance-agent.html">Finance Agent</a></li>
           <li><a href="servicing-agent.html">Servicing Agent</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Solutions</h5>
-        <ul>
           <li><a href="integrations.html">Integrations</a></li>
-          <li><a href="platform.html">For TMCs</a></li>
-          <li><a href="platform.html">For Enterprise</a></li>
         </ul>
       </div>
       <div>
-        <h5>Company</h5>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">ROI Calculator</a></li>
+          <li><a href="#">API Docs</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
         <ul>
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Book a demo</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
+        <div class="foot-socials-light">
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
       </div>
     </div>
-    <div class="foot-bottom">
-      <span>© 2026 VantisCorp. All rights reserved.</span>
-      <div class="foot-legal">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Security</a>
-      </div>
+    <div class="foot-bar">
+      <div class="container"><span>Copyright © 2026</span></div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="js/animations.js"></script>
-
+  <script src="js/animations.js"></script>
 </body>
 </html>

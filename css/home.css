@@ -243,6 +243,90 @@
   background: #fff;
   padding: 56px 0;
 }
+
+/* ====================================================
+   AGENTS 2x2 GRID (matches live vantiscorp.com layout)
+   ==================================================== */
+.agents-grid-section {
+  background: #fff;
+  padding: 40px 0 90px;
+}
+.agents-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px 64px;
+}
+.agent-cell {
+  display: flex;
+  flex-direction: column;
+}
+.agent-cell-eyebrow {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 16px;
+  letter-spacing: -0.005em;
+}
+.agent-cell-h {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+.agent-cell-desc {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-2);
+  margin: 0 0 28px;
+  max-width: 520px;
+}
+.agent-cell .mock-card {
+  margin-top: auto;
+  width: 100%;
+}
+@media (max-width: 980px) {
+  .agents-grid { grid-template-columns: 1fr; gap: 48px; }
+}
+
+/* ====================================================
+   HERO FLOAT ANIMATIONS (subtle vertical drift on cards)
+   ==================================================== */
+@keyframes vc-float-1 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes vc-float-2 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes vc-float-3 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes vc-fade-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.hero-metrics {
+  animation: vc-fade-up 0.8s var(--ease-out, cubic-bezier(.2,.7,.2,1)) 0.1s both;
+}
+.hero-noti-1 {
+  animation: vc-fade-up 0.8s var(--ease-out, cubic-bezier(.2,.7,.2,1)) 0.35s both, vc-float-1 5.5s ease-in-out 1.5s infinite;
+}
+.hero-noti-2 {
+  animation: vc-fade-up 0.8s var(--ease-out, cubic-bezier(.2,.7,.2,1)) 0.55s both, vc-float-2 6s ease-in-out 1.7s infinite;
+}
+.hero-noti-3 {
+  animation: vc-fade-up 0.8s var(--ease-out, cubic-bezier(.2,.7,.2,1)) 0.75s both, vc-float-3 5.8s ease-in-out 2s infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-metrics, .hero-noti-1, .hero-noti-2, .hero-noti-3 {
+    animation: none;
+  }
+}
 .agent-row:nth-of-type(odd) { background: #fff; }
 .agent-row .two-up {
   display: grid;

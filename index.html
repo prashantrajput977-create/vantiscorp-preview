@@ -33,7 +33,7 @@
     <div class="container">
       <a class="brand" href="index.html" aria-label="VantisCorp"><img src="images/vantis-logo.png" alt="VantisCorp" /></a>
       <nav class="nav nav--upper">
-        <div class="nav-has-drop"><a href="#agents">Featues</a>
+        <div class="nav-has-drop"><a href="#agents">Agents</a>
           <div class="nav-drop" role="menu">
             <div class="nav-drop-label">AI Agents</div>
             <div class="nav-drop-grid">
@@ -101,13 +101,13 @@
       <div class="hero-visual">
         <img class="hero-bg-img" src="images/live/hero-bg.png" alt="" />
         <!-- Top metrics row -->
-        <div class="hero-card hero-card-metrics">
+        <div class="hero-card hero-card-metrics hero-metrics">
           <div class="metric"><span class="m-val">$284K <em>+8%</em></span><span class="m-lbl">Revenue</span></div>
           <div class="metric"><span class="m-val">847 <em>+12%</em></span><span class="m-lbl">Bookings Today</span></div>
           <div class="metric"><span class="m-val">1.2m <em>34%</em></span><span class="m-lbl">Avg Handle</span></div>
         </div>
         <!-- Floating notification cards -->
-        <div class="hero-card noti">
+        <div class="hero-card noti hero-noti-1">
           <span class="noti-ico book"><i class="fa-solid fa-plane-up"></i></span>
           <div class="noti-body">
             <div class="noti-title">Booking Agent</div>
@@ -115,7 +115,7 @@
           </div>
           <span class="noti-badge green">$136 saved</span>
         </div>
-        <div class="hero-card noti">
+        <div class="hero-card noti hero-noti-2">
           <span class="noti-ico comp"><i class="fa-solid fa-shield-halved"></i></span>
           <div class="noti-body">
             <div class="noti-title">Compliance Agent</div>
@@ -123,7 +123,7 @@
           </div>
           <span class="noti-badge mint">Manager</span>
         </div>
-        <div class="hero-card noti">
+        <div class="hero-card noti hero-noti-3">
           <span class="noti-ico fin"><i class="fa-solid fa-chart-line"></i></span>
           <div class="noti-body">
             <div class="noti-title">Finance Agent</div>
@@ -144,110 +144,95 @@
     </div>
   </section>
 
-  <!-- BOOKING AGENT -->
-  <section id="agents" class="agent-row">
-    <div class="container two-up">
-      <div class="agent-text">
-        <span class="agent-eyebrow">Booking Agent</span>
-        <h2 class="agent-h">AI-Ranked Search Across All Content Sources</h2>
-        <p class="agent-desc">Compares fares, applies negotiated rates, resolves conflicts, and auto-selects the best policy-compliant option in seconds.</p>
-      </div>
-      <div class="agent-mock">
-        <div class="mock-card">
-          <div class="mock-head">
-            <div><strong>AI-Ranked Results</strong> <span class="muted">JFK → LAX | Mar 15</span></div>
-            <i class="fa-solid fa-circle-check tick"></i>
-          </div>
-          <div class="mock-fare">
-            <span>UA 2847</span><span>$342</span><span class="pill green">Best Match</span>
-          </div>
-          <div class="mock-fare highlight">
-            <span>DL 1153</span><span>$389</span><span class="pill mint">In Policy</span>
-          </div>
-          <div class="mock-fare">
-            <span>AA 0621</span><span>$478</span><span class="pill red">Over Budget</span>
-          </div>
-          <div class="mock-foot green-text"><strong>Auto-Selected UA 2847</strong> - Saves $136, 97% Policy Score</div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- AGENTS 2x2 GRID -->
+  <section id="agents" class="agents-grid-section">
+    <div class="container">
+      <div class="agents-grid">
 
-  <!-- COMPLIANCE AGENT -->
-  <section class="agent-row">
-    <div class="container two-up">
-      <div class="agent-text">
-        <span class="agent-eyebrow">Compliance Agent</span>
-        <h2 class="agent-h">Real-Time Policy Enforcement &amp; Approvals</h2>
-        <p class="agent-desc">Catches exceptions before they happen, auto-routes approvals with context, and maintains audit-ready compliance logs.</p>
-      </div>
-      <div class="agent-mock">
-        <div class="mock-card">
-          <div class="mock-head">
-            <div><strong>Real-Time Policy</strong></div>
-            <i class="fa-solid fa-circle-check tick"></i>
+        <!-- BOOKING -->
+        <div class="agent-cell">
+          <span class="agent-cell-eyebrow">Booking Agent</span>
+          <h2 class="agent-cell-h">AI-Ranked Search Across All Content Sources</h2>
+          <p class="agent-cell-desc">Compares fares, applies negotiated rates, resolves conflicts, and auto-selects the best policy-compliant option in seconds.</p>
+          <div class="mock-card">
+            <div class="mock-head">
+              <div><strong>AI-Ranked Results</strong> <span class="muted">JFK → LAX | Mar 15</span></div>
+              <i class="fa-solid fa-circle-check tick"></i>
+            </div>
+            <div class="mock-fare">
+              <span>UA 2847</span><span>$342</span><span class="pill green">Best Match</span>
+            </div>
+            <div class="mock-fare highlight">
+              <span>DL 1153</span><span>$389</span><span class="pill mint">In Policy</span>
+            </div>
+            <div class="mock-fare">
+              <span>AA 0621</span><span>$478</span><span class="pill red">Over Budget</span>
+            </div>
+            <div class="mock-foot green-text"><strong>Auto-Selected UA 2847</strong> - Saves $136, 97% Policy Score</div>
           </div>
-          <div class="mock-3stats">
-            <div><strong class="big green-text">98.6%</strong><span>Compliance</span></div>
-            <div><strong class="big blue-text">3</strong><span>Pending</span></div>
-            <div><strong class="big amber-text">12</strong><span>Auto-Resolved</span></div>
-          </div>
-          <div class="mock-row"><span>VIP Override Approved - J. Park</span></div>
-          <div class="mock-row"><span>Rate Cap Exceeded - Routed To Manager</span></div>
-          <div class="mock-row"><span>Hotel Policy Exception Auto-Denied</span></div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- FINANCE AGENT -->
-  <section class="agent-row">
-    <div class="container two-up">
-      <div class="agent-text">
-        <span class="agent-eyebrow">Finance Agent</span>
-        <h2 class="agent-h">Auto-Reconciliation &amp; Financial Close</h2>
-        <p class="agent-desc">Matches invoices to bookings, flags anomalies, handles GST/tax, and closes books in hours - not days.</p>
-      </div>
-      <div class="agent-mock">
-        <div class="mock-card">
-          <div class="mock-head">
-            <div><strong>Auto-Reconciliation &amp; Financial Close</strong></div>
-            <i class="fa-solid fa-circle-check tick"></i>
+        <!-- COMPLIANCE -->
+        <div class="agent-cell">
+          <span class="agent-cell-eyebrow">Compliance Agent</span>
+          <h2 class="agent-cell-h">Real-Time Policy Enforcement &amp; Approvals</h2>
+          <p class="agent-cell-desc">Catches exceptions before they happen, auto-routes approvals with context, and maintains audit-ready compliance logs.</p>
+          <div class="mock-card">
+            <div class="mock-head">
+              <div><strong>Real-Time Policy</strong></div>
+              <i class="fa-solid fa-circle-check tick"></i>
+            </div>
+            <div class="mock-3stats">
+              <div><strong class="big green-text">98.6%</strong><span>Compliance</span></div>
+              <div><strong class="big blue-text">3</strong><span>Pending</span></div>
+              <div><strong class="big amber-text">12</strong><span>Auto-Resolved</span></div>
+            </div>
+            <div class="mock-row"><span>VIP Override Approved - J. Park</span></div>
+            <div class="mock-row"><span>Rate Cap Exceeded - Routed To Manager</span></div>
+            <div class="mock-row"><span>Hotel Policy Exception Auto-Denied</span></div>
           </div>
-          <div class="mock-3stats">
-            <div><strong class="big green-text">$847K</strong><span>Reconciled</span></div>
-            <div><strong class="big amber-text">$12.4K</strong><span>Flagged</span></div>
-            <div><strong class="big blue-text">$63K</strong><span>Saved</span></div>
-          </div>
-          <div class="mock-foot green-text"><strong>3 Invoices Auto-Matched</strong> - $12,400 Cleared</div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- SERVICING AGENT -->
-  <section class="agent-row">
-    <div class="container two-up">
-      <div class="agent-text">
-        <span class="agent-eyebrow">Servicing Agent</span>
-        <h2 class="agent-h">Autonomous Changes &amp; Rebookings</h2>
-        <p class="agent-desc">Handles traveler changes, cancellations, and refunds autonomously - no human intervention for routine requests.</p>
-      </div>
-      <div class="agent-mock">
-        <div class="mock-card">
-          <div class="mock-head">
-            <div><strong>Servicing Agent</strong></div>
-            <i class="fa-solid fa-circle-check tick"></i>
+        <!-- FINANCE -->
+        <div class="agent-cell">
+          <span class="agent-cell-eyebrow"><i class="fa-solid fa-chart-line" style="color:var(--green-deep);margin-right:6px"></i> Finance Agent</span>
+          <h2 class="agent-cell-h">Auto-Reconciliation &amp; Financial Close</h2>
+          <p class="agent-cell-desc">Matches invoices to bookings, flags anomalies, handles GST/tax, and closes books in hours - not days.</p>
+          <div class="mock-card">
+            <div class="mock-head">
+              <div><strong>Auto-Reconciliation &amp; Financial Close</strong></div>
+              <i class="fa-solid fa-circle-check tick"></i>
+            </div>
+            <div class="mock-3stats">
+              <div><strong class="big green-text">$847K</strong><span>Reconciled</span></div>
+              <div><strong class="big blue-text">$12.4K</strong><span>Flagged</span></div>
+              <div><strong class="big amber-text">$63K</strong><span>Saved</span></div>
+            </div>
+            <div class="mock-foot green-text"><strong>3 Invoices Auto-Matched</strong> - $12,400 Cleared</div>
           </div>
-          <div class="mock-3stats">
-            <div><strong class="big amber-text">24</strong><span>Open</span></div>
-            <div><strong class="big green-text">18</strong><span>Auto-Resolved</span></div>
-            <div><strong class="big blue-text">1.2M</strong><span>Avg Time</span></div>
-          </div>
-          <div class="mock-row split"><span><strong>M. Chen</strong> · Rebooking — Flight Delayed 4Hrs</span><span class="pill green">Auto-Resolved</span></div>
-          <div class="mock-row split"><span><strong>R. Patel</strong> · Hotel Change — Early Check-In</span><span class="pill amber">Processing</span></div>
-          <div class="mock-row split"><span><strong>L. Torres</strong> · Cancel &amp; Refund — SFO Trip</span><span class="pill blue">Pending</span></div>
         </div>
+
+        <!-- SERVICING -->
+        <div class="agent-cell">
+          <span class="agent-cell-eyebrow">Servicing Agent</span>
+          <h2 class="agent-cell-h">Autonomous Changes &amp; Rebookings</h2>
+          <p class="agent-cell-desc">Handles traveler changes, cancellations, and refunds autonomously - no human intervention for routine requests.</p>
+          <div class="mock-card">
+            <div class="mock-head">
+              <div><strong>Servicing Agent</strong></div>
+              <i class="fa-solid fa-circle-check tick"></i>
+            </div>
+            <div class="mock-3stats">
+              <div><strong class="big green-text">24</strong><span>Open</span></div>
+              <div><strong class="big blue-text">18</strong><span>Auto-Resolved</span></div>
+              <div><strong class="big amber-text">1.2M</strong><span>Avg Time</span></div>
+            </div>
+            <div class="mock-row split"><span><strong>M. Chen</strong></span><span>Rebooking — Flight Delayed 4Hrs</span><span class="pill green">Auto-Resolved</span></div>
+            <div class="mock-row split"><span><strong>R. Patel</strong></span><span>Hotel Change — Early Check-In</span><span class="pill amber">Processing</span></div>
+            <div class="mock-row split"><span><strong>L. Torres</strong></span><span>Cancel &amp; Refund — SFO Trip</span><span class="pill blue">Pending</span></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

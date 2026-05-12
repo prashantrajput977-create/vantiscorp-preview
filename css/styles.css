@@ -368,9 +368,22 @@ p { color: var(--text-2); margin: 14px 0 0; font-size: 18px; line-height: 1.6; }
 .notibar-close svg { width: 14px; height: 14px; stroke: currentColor; stroke-width: 2; fill: none; }
 .notibar.is-hidden { display: none; }
 @media (max-width: 720px) {
-  .notibar { font-size: 13px; }
-  .notibar .container { padding: 12px 48px; }
-  .notibar-headline { display: none; }
+  .notibar { font-size: 12.5px; line-height: 1.45; }
+  .notibar .container { padding: 10px 44px 10px 16px; gap: 8px; min-height: 44px; }
+  .notibar-text { gap: 8px; flex-wrap: nowrap; }
+  .notibar-tag { font-size: 9.5px; padding: 3px 8px; flex-shrink: 0; }
+  .notibar-headline {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+  .notibar a.notibar-cta { display: none; }
+  .notibar-close { right: 12px; }
+}
+@media (max-width: 420px) {
+  .notibar-headline { font-size: 12px; }
 }
 
 /* ---------- Editorial split hero (image companion) ---------- */

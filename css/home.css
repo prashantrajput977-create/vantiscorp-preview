@@ -246,17 +246,34 @@
 
 /* ====================================================
    AGENTS 2x2 GRID (matches live vantiscorp.com layout)
+   Each pair: row1=text|text, row2=card|card
+   So text blocks share top baseline, cards share top baseline.
    ==================================================== */
 .agents-grid-section {
   background: #fff;
   padding: 40px 0 90px;
 }
-.agents-grid {
+.agent-pair {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 56px 64px;
+  grid-template-rows: auto 1fr;
+  column-gap: 64px;
+  row-gap: 32px;
+  margin-bottom: 80px;
 }
-.agent-cell {
+.agent-pair:last-child { margin-bottom: 0; }
+.agent-text-col {
+  grid-row: 1;
+  align-self: end;
+  padding-bottom: 8px;
+}
+.agent-card-col {
+  grid-row: 2;
+  align-self: start;
+}
+.agent-card-col .mock-card {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -280,52 +297,65 @@
   font-size: 16px;
   line-height: 1.65;
   color: var(--text-2);
-  margin: 0 0 28px;
+  margin: 0;
   max-width: 520px;
 }
-.agent-cell .mock-card {
-  margin-top: auto;
-  width: 100%;
-}
 @media (max-width: 980px) {
-  .agents-grid { grid-template-columns: 1fr; gap: 48px; }
+  .agent-pair { grid-template-columns: 1fr; row-gap: 24px; margin-bottom: 56px; }
+  .agent-text-col, .agent-card-col { grid-row: auto; }
 }
 
 /* ====================================================
-   HERO FLOAT ANIMATIONS (subtle vertical drift on cards)
+   HERO SEQUENTIAL REVEAL
+   Metrics fade in first, then notifications appear one
+   after another like a live agent activity feed.
+   Once revealed, cards stay still (no perpetual float).
    ==================================================== */
-@keyframes vc-float-1 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+@keyframes vc-card-in {
+  0%   { opacity: 0; transform: translateY(14px) scale(.98); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
 }
-@keyframes vc-float-2 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+@keyframes vc-badge-pulse {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
 }
-@keyframes vc-float-3 {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-@keyframes vc-fade-up {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
+
+/* Initial hidden state so nothing flashes before animating */
+.hero-metrics,
+.hero-noti-1,
+.hero-noti-2,
+.hero-noti-3 { opacity: 0; }
+
 .hero-metrics {
-  animation: vc-fade-up 0.8s var(--ease-out, cubic-bezier(.2,.7,.2,1)) 0.1s both;
+  animation: vc-card-in 0.7s cubic-bezier(.2,.7,.2,1) 0.1s both;
 }
 .hero-noti-1 {
-  animation: vc-fade-up 0.8s var(--ease-out, cubic-bezier(.2,.7,.2,1)) 0.35s both, vc-float-1 5.5s ease-in-out 1.5s infinite;
+  animation: vc-card-in 0.6s cubic-bezier(.2,.7,.2,1) 0.9s both;
 }
 .hero-noti-2 {
-  animation: vc-fade-up 0.8s var(--ease-out, cubic-bezier(.2,.7,.2,1)) 0.55s both, vc-float-2 6s ease-in-out 1.7s infinite;
+  animation: vc-card-in 0.6s cubic-bezier(.2,.7,.2,1) 1.9s both;
 }
 .hero-noti-3 {
-  animation: vc-fade-up 0.8s var(--ease-out, cubic-bezier(.2,.7,.2,1)) 0.75s both, vc-float-3 5.8s ease-in-out 2s infinite;
+  animation: vc-card-in 0.6s cubic-bezier(.2,.7,.2,1) 2.9s both;
 }
+
+/* Badge pulse — fires just after each card lands */
+.hero-noti-1 .noti-badge { animation: vc-badge-pulse 0.6s ease-out 1.45s both; }
+.hero-noti-2 .noti-badge { animation: vc-badge-pulse 0.6s ease-out 2.45s both; }
+.hero-noti-3 .noti-badge { animation: vc-badge-pulse 0.6s ease-out 3.45s both; }
+
+/* Counters are animated by JS (counters in animations.js) */
+.hero-stat strong { font-variant-numeric: tabular-nums; }
+
 @media (prefers-reduced-motion: reduce) {
   .hero-metrics, .hero-noti-1, .hero-noti-2, .hero-noti-3 {
     animation: none;
+    opacity: 1;
   }
+  .hero-noti-1 .noti-badge,
+  .hero-noti-2 .noti-badge,
+  .hero-noti-3 .noti-badge { animation: none; }
 }
 .agent-row:nth-of-type(odd) { background: #fff; }
 .agent-row .two-up {
@@ -700,59 +730,84 @@
 }
 
 /* ====================================================
-   LIGHT FOOTER (matches live)
+   LIGHT FOOTER (matches live, polished)
    ==================================================== */
 .site-footer-light {
   background: #fff;
   color: var(--text-2);
-  padding: 80px 0 0;
+  padding: 88px 0 0;
   border-top: 1px solid var(--hairline);
 }
 .site-footer-light .foot-grid-3 {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr 1fr;
-  gap: 48px;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 56px;
   padding-bottom: 64px;
+  align-items: start;
 }
 .site-footer-light .foot-grid-3.cols-3 {
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr;
 }
 .site-footer-light .foot-brand img { height: 38px; width: auto; display: block; }
+.foot-tagline-light {
+  margin: 22px 0 0;
+  max-width: 300px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--text-2);
+  opacity: 0.78;
+}
 .site-footer-light h4 {
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--ink);
-  margin: 0 0 20px;
+  margin: 0 0 22px;
+  opacity: 0.7;
 }
 .site-footer-light ul { list-style: none; padding: 0; margin: 0; }
-.site-footer-light li { margin-bottom: 14px; }
+.site-footer-light li { margin-bottom: 12px; }
 .site-footer-light a {
-  color: var(--text-2);
+  color: var(--ink);
   text-decoration: none;
-  font-size: 15px;
-  transition: color 0.15s ease;
+  font-size: 14.5px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.18s ease, transform 0.18s ease;
+  display: inline-block;
 }
-.site-footer-light a:hover { color: var(--mint); }
+.site-footer-light a:hover { color: var(--mint, #14CF93); transform: translateX(2px); }
 .foot-socials-light {
   display: flex;
-  gap: 16px;
+  gap: 10px;
   margin-top: 28px;
 }
 .foot-socials-light a {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--mint);
-  font-size: 22px;
+  color: var(--text-2);
+  background: #f5f7f8;
+  border-radius: 999px;
+  font-size: 15px;
+  border: 1px solid transparent;
+  transition: color 0.18s ease, background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
 }
-.foot-socials-light a:hover { color: var(--green-deep); }
+.foot-socials-light a:hover {
+  color: var(--mint, #14CF93);
+  background: #fff;
+  border-color: rgba(20,207,147,0.35);
+  transform: translateY(-1px);
+}
 .foot-bar {
   background: #f0f4f6;
-  padding: 18px 0;
+  padding: 20px 0;
   font-size: 13px;
   color: var(--muted);
+  letter-spacing: 0.01em;
 }
 
 /* ====================================================

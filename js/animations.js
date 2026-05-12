@@ -57,18 +57,29 @@
     const speed = 60;
     const start = (el) => {
       const target = +el.getAttribute('data-target');
+      const suffix = el.getAttribute('data-suffix') || '';
+      const prefix = el.getAttribute('data-prefix') || '';
+      if (reduce) { el.innerText = prefix + target + suffix; return; }
       let count = 0;
       const step = () => {
         const inc = Math.max(1, target / speed);
         count += inc;
-        if (count < target) { el.innerText = Math.ceil(count); requestAnimationFrame(step); }
-        else { el.innerText = target; }
+        if (count < target) {
+          el.innerText = prefix + Math.ceil(count) + suffix;
+          requestAnimationFrame(step);
+        } else {
+          el.innerText = prefix + target + suffix;
+        }
       };
       step();
     };
     const obs = new IntersectionObserver((entries) => {
       entries.forEach(e => {
-        if (e.isIntersecting) { start(e.target); obs.unobserve(e.target); }
+        if (e.isIntersecting) {
+          const delay = +e.target.getAttribute('data-delay') || 0;
+          setTimeout(() => start(e.target), delay);
+          obs.unobserve(e.target);
+        }
       });
     }, { threshold: 0.4 });
     els.forEach(c => obs.observe(c));

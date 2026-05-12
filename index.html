@@ -89,9 +89,9 @@
         <h1>From request to resolution.<br/>Fully autonomous.</h1>
         <p class="hero-lead">VantisCorp is the AI operating system purpose-built for TMCs. Autonomous agents handle booking, compliance, servicing, and finance so you scale revenue without scaling headcount.</p>
         <div class="hero-stats">
-          <div class="hero-stat"><strong>50K+</strong><span>Bookings Managed<br/>Monthly</span></div>
-          <div class="hero-stat"><strong>30+</strong><span>Countries</span></div>
-          <div class="hero-stat"><strong>120+</strong><span>TMCs Worldwide</span></div>
+          <div class="hero-stat"><strong class="counter" data-target="50" data-suffix="K+" data-delay="100">50K+</strong><span>Bookings Managed<br/>Monthly</span></div>
+          <div class="hero-stat"><strong class="counter" data-target="30" data-suffix="+" data-delay="250">30+</strong><span>Countries</span></div>
+          <div class="hero-stat"><strong class="counter" data-target="120" data-suffix="+" data-delay="400">120+</strong><span>TMCs Worldwide</span></div>
         </div>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#cta">Book a Demo</a>
@@ -147,13 +147,19 @@
   <!-- AGENTS 2x2 GRID -->
   <section id="agents" class="agents-grid-section">
     <div class="container">
-      <div class="agents-grid">
-
-        <!-- BOOKING -->
-        <div class="agent-cell">
+      <!-- Row 1: Booking + Compliance -->
+      <div class="agent-pair">
+        <div class="agent-text-col">
           <span class="agent-cell-eyebrow">Booking Agent</span>
           <h2 class="agent-cell-h">AI-Ranked Search Across All Content Sources</h2>
           <p class="agent-cell-desc">Compares fares, applies negotiated rates, resolves conflicts, and auto-selects the best policy-compliant option in seconds.</p>
+        </div>
+        <div class="agent-text-col">
+          <span class="agent-cell-eyebrow">Compliance Agent</span>
+          <h2 class="agent-cell-h">Real-Time Policy Enforcement &amp; Approvals</h2>
+          <p class="agent-cell-desc">Catches exceptions before they happen, auto-routes approvals with context, and maintains audit-ready compliance logs.</p>
+        </div>
+        <div class="agent-card-col">
           <div class="mock-card">
             <div class="mock-head">
               <div><strong>AI-Ranked Results</strong> <span class="muted">JFK → LAX | Mar 15</span></div>
@@ -171,12 +177,7 @@
             <div class="mock-foot green-text"><strong>Auto-Selected UA 2847</strong> - Saves $136, 97% Policy Score</div>
           </div>
         </div>
-
-        <!-- COMPLIANCE -->
-        <div class="agent-cell">
-          <span class="agent-cell-eyebrow">Compliance Agent</span>
-          <h2 class="agent-cell-h">Real-Time Policy Enforcement &amp; Approvals</h2>
-          <p class="agent-cell-desc">Catches exceptions before they happen, auto-routes approvals with context, and maintains audit-ready compliance logs.</p>
+        <div class="agent-card-col">
           <div class="mock-card">
             <div class="mock-head">
               <div><strong>Real-Time Policy</strong></div>
@@ -192,12 +193,21 @@
             <div class="mock-row"><span>Hotel Policy Exception Auto-Denied</span></div>
           </div>
         </div>
+      </div>
 
-        <!-- FINANCE -->
-        <div class="agent-cell">
+      <!-- Row 2: Finance + Servicing -->
+      <div class="agent-pair">
+        <div class="agent-text-col">
           <span class="agent-cell-eyebrow"><i class="fa-solid fa-chart-line" style="color:var(--green-deep);margin-right:6px"></i> Finance Agent</span>
           <h2 class="agent-cell-h">Auto-Reconciliation &amp; Financial Close</h2>
           <p class="agent-cell-desc">Matches invoices to bookings, flags anomalies, handles GST/tax, and closes books in hours - not days.</p>
+        </div>
+        <div class="agent-text-col">
+          <span class="agent-cell-eyebrow">Servicing Agent</span>
+          <h2 class="agent-cell-h">Autonomous Changes &amp; Rebookings</h2>
+          <p class="agent-cell-desc">Handles traveler changes, cancellations, and refunds autonomously - no human intervention for routine requests.</p>
+        </div>
+        <div class="agent-card-col">
           <div class="mock-card">
             <div class="mock-head">
               <div><strong>Auto-Reconciliation &amp; Financial Close</strong></div>
@@ -211,12 +221,7 @@
             <div class="mock-foot green-text"><strong>3 Invoices Auto-Matched</strong> - $12,400 Cleared</div>
           </div>
         </div>
-
-        <!-- SERVICING -->
-        <div class="agent-cell">
-          <span class="agent-cell-eyebrow">Servicing Agent</span>
-          <h2 class="agent-cell-h">Autonomous Changes &amp; Rebookings</h2>
-          <p class="agent-cell-desc">Handles traveler changes, cancellations, and refunds autonomously - no human intervention for routine requests.</p>
+        <div class="agent-card-col">
           <div class="mock-card">
             <div class="mock-head">
               <div><strong>Servicing Agent</strong></div>
@@ -232,7 +237,6 @@
             <div class="mock-row split"><span><strong>L. Torres</strong></span><span>Cancel &amp; Refund — SFO Trip</span><span class="pill blue">Pending</span></div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -338,6 +342,7 @@
     <div class="container foot-grid-3">
       <div class="foot-brand">
         <a class="brand" href="index.html" aria-label="VantisCorp"><img src="images/vantis-logo.png" alt="VantisCorp" /></a>
+        <p class="foot-tagline-light">The AI operating system purpose-built for travel management companies.</p>
       </div>
       <div>
         <h4>Features</h4>

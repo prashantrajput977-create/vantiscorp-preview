@@ -961,14 +961,21 @@
   .hero-stat strong { font-size: 26px; }
   .hero-stat span { font-size: 13px; line-height: 1.4; }
 
-  /* MOBILE HERO VISUAL — re-flow the floating animation into a tidy centered stack */
+  /* MOBILE HERO VISUAL — keep hero image, stack animation cards beneath it */
   .hero-visual {
     min-height: 0;
     display: block;
     margin-top: 8px;
     padding: 0 4px;
   }
-  .hero-bg-img { display: none; }
+  .hero-bg-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 18px;
+    border-radius: 18px;
+    overflow: hidden;
+  }
   .hero-card { position: static; box-shadow: 0 10px 24px rgba(11,20,24,0.08), 0 1px 2px rgba(11,20,24,0.04); }
   .hero-card-metrics {
     position: static;

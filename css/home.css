@@ -961,10 +961,10 @@
   .hero-stat strong { font-size: 26px; }
   .hero-stat span { font-size: 13px; line-height: 1.4; }
 
-  /* MOBILE HERO VISUAL — hero image with floating metric + agent cards around it */
+  /* MOBILE HERO VISUAL — hero image as backdrop, metric + agent cards float over it */
   .hero-visual {
     position: relative;
-    min-height: 460px;
+    min-height: 0;
     display: block;
     margin-top: 12px;
     padding: 0;
@@ -973,45 +973,48 @@
   .hero-bg-img {
     display: block;
     width: 100%;
+    height: 440px;        /* fixed tall canvas so cards have backdrop the whole way down */
+    object-fit: cover;
+    object-position: center;
     max-width: 100%;
     margin: 0 auto;
     border-radius: 18px;
   }
-  /* Metrics row floats over the TOP of the hero image */
+  /* Metrics row floats over TOP of hero image */
   .hero-card.hero-card-metrics {
     position: absolute;
-    top: 12px;
+    top: 14px;
     left: 12px;
     right: 12px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     padding: 12px 12px;
-    box-shadow: 0 12px 28px rgba(11,20,24,0.12), 0 2px 4px rgba(11,20,24,0.05);
+    box-shadow: 0 12px 28px rgba(11,20,24,0.16), 0 2px 4px rgba(11,20,24,0.08);
     z-index: 3;
   }
   .hero-card-metrics .metric .m-val { font-size: 14px; line-height: 1.15; }
   .hero-card-metrics .metric .m-val em { font-size: 10.5px; margin-left: 3px; display: inline-block; }
   .hero-card-metrics .metric .m-lbl { font-size: 10.5px; line-height: 1.25; margin-top: 3px; }
 
-  /* Agent notification cards — compact, floating over middle/bottom of hero */
+  /* Agent notification cards — stagger over middle/bottom of hero image */
   .hero-card.noti {
     position: absolute;
     width: auto;
-    max-width: 78%;
+    max-width: calc(100% - 24px);
     padding: 10px 12px;
     gap: 10px;
     margin: 0;
-    box-shadow: 0 12px 28px rgba(11,20,24,0.12), 0 2px 4px rgba(11,20,24,0.05);
+    box-shadow: 0 12px 28px rgba(11,20,24,0.16), 0 2px 4px rgba(11,20,24,0.08);
     z-index: 4;
   }
-  .hero-card.noti:nth-of-type(2) { top: 42%; left: 8px; right: auto; }
-  .hero-card.noti:nth-of-type(3) { top: 60%; right: 8px; left: auto; }
-  .hero-card.noti:nth-of-type(4) { top: 78%; left: 8px; right: auto; }
+  .hero-card.noti:nth-of-type(2) { top: 110px; left: 12px; right: 12px; }
+  .hero-card.noti:nth-of-type(3) { top: 210px; left: 12px; right: 12px; }
+  .hero-card.noti:nth-of-type(4) { top: 310px; left: 12px; right: 12px; }
   .noti-ico { width: 32px; height: 32px; font-size: 13px; border-radius: 8px; }
-  .noti-title { font-size: 12.5px; line-height: 1.2; }
-  .noti-sub { font-size: 11px; line-height: 1.25; margin-top: 1px; }
-  .noti-badge { font-size: 10.5px; padding: 3px 8px; }
+  .noti-title { font-size: 13px; line-height: 1.2; }
+  .noti-sub { font-size: 11.5px; line-height: 1.25; margin-top: 1px; }
+  .noti-badge { font-size: 11px; padding: 3px 9px; }
   .section-h, .agent-h, .step-h, .int-strip-h { font-size: 24px; }
   .results-h { font-size: 36px; }
   .get-started-h { font-size: 44px; }

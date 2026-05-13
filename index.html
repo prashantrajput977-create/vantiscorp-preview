@@ -73,9 +73,8 @@
           </div>
         </div>
         <a href="integrations.html">Integration</a>
-        <a href="#">Resources</a>
         <a href="about.html">Company</a>
-        <a href="#">Contact Us</a>
+        <a href="index.html#cta">Contact Us</a>
         <button class="nav-search" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
       </nav>
       <button class="menu-toggle" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
@@ -358,10 +357,19 @@
         <div class="cta-content">
           <h2>Ready to run your TMC on autopilot?</h2>
           <p>See how VantisCorp's AI agents can transform your operations. Get a personalized demo in under 30 minutes.</p>
-          <div class="cta-actions">
-            <a class="btn btn-primary-on-green" href="#">Schedule your demo</a>
-            <a class="btn btn-text-white" href="#">Talk to our team <span aria-hidden="true">›</span></a>
-          </div>
+          <form class="cta-form" id="demoForm" action="#" method="POST" novalidate>
+            <div class="cta-form-row">
+              <input class="cta-input" type="text" name="name" placeholder="Full name" required autocomplete="name" />
+              <input class="cta-input" type="email" name="email" placeholder="Work email" required autocomplete="email" />
+            </div>
+            <div class="cta-form-row">
+              <input class="cta-input" type="text" name="company" placeholder="Company" required autocomplete="organization" />
+              <input class="cta-input" type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel" />
+            </div>
+            <textarea class="cta-input cta-textarea" name="message" rows="3" placeholder="Tell us about your TMC and what you'd like to see"></textarea>
+            <button class="btn btn-primary-on-green cta-submit" type="submit">Request a demo</button>
+            <div class="cta-form-status" id="formStatus" aria-live="polite"></div>
+          </form>
           <div class="cta-fine">No commitment · Personalized walkthrough.</div>
         </div>
       </div>
@@ -386,27 +394,12 @@
         </ul>
       </div>
       <div>
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="#">Case Studies</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">ROI Calculator</a></li>
-          <li><a href="#">API Docs</a></li>
-          <li><a href="#">Security</a></li>
-        </ul>
-      </div>
-      <div>
         <h4>Company</h4>
         <ul>
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Leadership</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact Us</a></li>
         </ul>
         <div class="foot-socials-light">
-          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/112792990/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
     </div>

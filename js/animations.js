@@ -136,12 +136,49 @@
     });
   }
 
+  function demoForm() {
+    var form = document.getElementById('demoForm');
+    if (!form) return;
+    var status = document.getElementById('formStatus');
+    var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    function setStatus(msg, cls) {
+      if (!status) return;
+      status.textContent = msg;
+      status.classList.remove('is-success', 'is-error');
+      if (cls) status.classList.add(cls);
+    }
+    function clearErrors() {
+      form.querySelectorAll('.is-error').forEach(function (el) { el.classList.remove('is-error'); });
+    }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      clearErrors();
+      var name = form.elements['name'];
+      var email = form.elements['email'];
+      var company = form.elements['company'];
+      var errs = [];
+      if (!name.value.trim()) { name.classList.add('is-error'); errs.push('name'); }
+      if (!email.value.trim() || !EMAIL_RE.test(email.value.trim())) { email.classList.add('is-error'); errs.push('email'); }
+      if (!company.value.trim()) { company.classList.add('is-error'); errs.push('company'); }
+      if (errs.length) {
+        setStatus('Please fill in your name, a valid work email, and company.', 'is-error');
+        return;
+      }
+      // PREVIEW ONLY — WordPress dev: replace this block with a real fetch/POST to your backend.
+      // The form already POSTs all fields by name (name, email, company, phone, message).
+      setStatus("Thanks " + name.value.trim().split(' ')[0] + " — we'll be in touch within 1 business day.", 'is-success');
+      form.reset();
+    });
+  }
+
   function init() {
     autoTag();
     setupObserver();
     counters();
     notibar();
     mobileMenu();
+    demoForm();
   }
 
   if (document.readyState === 'loading') {

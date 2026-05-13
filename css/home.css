@@ -829,6 +829,61 @@
   max-width: 480px;
 }
 .cta-actions { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+
+/* ====================================================
+   CTA DEMO FORM (homepage)
+   ==================================================== */
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 540px;
+}
+.cta-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.cta-input {
+  font-family: inherit;
+  font-size: 15px;
+  color: #fff;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.28);
+  border-radius: 8px;
+  padding: 13px 16px;
+  width: 100%;
+  outline: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.cta-input::placeholder { color: rgba(255,255,255,0.65); }
+.cta-input:hover { background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.40); }
+.cta-input:focus { background: rgba(255,255,255,0.18); border-color: var(--mint, #14CF93); }
+.cta-input.is-error { border-color: #ff8a8a; background: rgba(255,138,138,0.10); }
+.cta-textarea { resize: vertical; min-height: 92px; font-family: inherit; }
+.cta-submit {
+  align-self: flex-start;
+  margin-top: 4px;
+  cursor: pointer;
+  border: none;
+}
+.cta-form-status {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.92);
+  min-height: 20px;
+  margin-top: 4px;
+}
+.cta-form-status.is-success {
+  color: #fff;
+  background: rgba(20,207,147,0.18);
+  border: 1px solid rgba(20,207,147,0.45);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-weight: 600;
+}
+.cta-form-status.is-error { color: #ffd2d2; }
+
 .btn-primary-on-green {
   background: var(--mint);
   color: var(--ink);
@@ -1019,7 +1074,11 @@
   .results-h { font-size: 36px; }
   .get-started-h { font-size: 44px; }
   .cta-content h2 { font-size: 36px; }
-  .cta-banner-live { padding: 48px 28px; }
+  .cta-banner-live { padding: 48px 24px; }
+  .cta-form-row { grid-template-columns: 1fr; gap: 10px; }
+  .cta-form { gap: 10px; }
+  .cta-input { font-size: 16px; padding: 12px 14px; } /* 16px prevents iOS zoom-on-focus */
+  .cta-submit { width: 100%; align-self: stretch; }
   .site-footer-light .foot-grid-3 { grid-template-columns: 1fr; gap: 36px; padding-bottom: 48px; }
   .site-footer-light { padding-top: 64px; }
   .foot-tagline-light { max-width: 100%; }

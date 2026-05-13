@@ -593,21 +593,18 @@
 @media (max-width: 900px) {
   .people-band { padding: 56px 0; }
   .people-grid { grid-template-columns: 1fr; gap: 14px; }
-  .people-stack { grid-template-columns: 1fr 1fr; grid-template-rows: auto; gap: 14px; }
+  .people-stack { display: none; }
   .people-card { aspect-ratio: auto; }
   .people-card--lg { aspect-ratio: auto; }
   .people-card img { aspect-ratio: 4 / 3; flex: none; height: auto; }
-  .people-card--lg img { aspect-ratio: 16 / 10; }
-  .people-quote { font-size: 17px; }
-  .people-card--lg figcaption { padding: 20px 22px 22px; gap: 6px; }
-  .people-card figcaption { padding: 16px 18px 18px; }
+  .people-card--lg img { aspect-ratio: 4 / 5; object-position: center 25%; }
+  .people-quote { font-size: 18px; max-width: none; }
+  .people-card--lg figcaption { padding: 22px 22px 24px; gap: 6px; }
   .people-role { font-size: 10.5px; margin-bottom: 6px; }
-  .people-quote-sm { font-size: 13px; }
 }
 @media (max-width: 540px) {
-  .people-stack { grid-template-columns: 1fr; }
-  .people-card img { aspect-ratio: 16 / 11; object-position: center 20%; }
-  .people-card--lg img { aspect-ratio: 16 / 11; }
+  .people-card--lg img { aspect-ratio: 4 / 5; }
+  .people-card--lg figcaption { padding: 20px 20px 22px; }
 }
 
 /* ====================================================

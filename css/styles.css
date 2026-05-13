@@ -431,6 +431,60 @@ p { color: var(--text-2); margin: 14px 0 0; font-size: 18px; line-height: 1.6; }
   .split-hero-image { aspect-ratio: 16 / 11; max-width: 560px; }
 }
 
+/* Editorial variant - landscape, no dark overlay, with UI fragments */
+.split-hero-image--editorial {
+  aspect-ratio: 16 / 10;
+  background: #f1efe9;
+}
+.split-hero-image--editorial::after { display: none; }
+.hero-frag {
+  position: absolute;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 20px 40px -16px rgba(11,20,24,0.28), 0 0 0 1px rgba(11,20,24,0.04);
+  font-family: inherit;
+}
+.hero-frag--tl {
+  top: 20px; left: 20px;
+  display: flex; flex-direction: column; gap: 8px;
+  min-width: 220px;
+}
+.hero-frag--br {
+  bottom: 20px; right: 20px;
+  min-width: 180px;
+}
+.frag-row {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 12px; font-weight: 500;
+}
+.frag-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  flex-shrink: 0;
+}
+.frag-dot--green {
+  background: var(--bright-green, #14cf93);
+  box-shadow: 0 0 0 3px rgba(20,207,147,0.18);
+}
+.frag-name { color: var(--ink); font-weight: 600; }
+.frag-status { color: var(--text-2, #5a6e76); margin-left: auto; font-size: 11.5px; font-weight: 500; }
+.frag-label { font-size: 11px; color: var(--text-2, #5a6e76); font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; }
+.frag-metric { font-size: 26px; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; margin-top: 4px; line-height: 1; }
+.frag-meta { font-size: 11.5px; color: var(--bright-green, #14cf93); font-weight: 600; margin-top: 6px; }
+.frag-arrow { display: inline-block; margin-right: 2px; }
+@media (max-width: 900px) {
+  .hero-frag--tl { min-width: 0; padding: 10px 12px; top: 12px; left: 12px; }
+  .hero-frag--br { min-width: 0; padding: 10px 12px; bottom: 12px; right: 12px; }
+  .frag-row { font-size: 11px; }
+  .frag-metric { font-size: 20px; }
+}
+@media (max-width: 480px) {
+  .hero-frag--tl .frag-row:nth-child(3) { display: none; }
+}
+
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
